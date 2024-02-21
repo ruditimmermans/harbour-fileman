@@ -1,0 +1,97 @@
+# Rename this file as harbour-fileman.changes to include changelog
+# entries in your RPM file.
+#
+# Add new changelog entries following the format below.
+# Add newest entries to the top of the list.
+# Separate entries from eachother with a blank line.
+
+# * date Author's Name <author's email> version-release
+# - Summary of changes
+
+* Mon Sep 21 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.1-1
+- [MINOR BUGFIX] Adding search in directory
+- [MINOR BUGFIX] Adding option to adjust overlay
+- [ADDED] Italian language
+
+* Fri Aug 30 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-20
+- [UPDATE] Updated all translation
+
+* Mon Aug 26 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-19
+- [UPDATE] Adding GitHub links to about screen
+- [UPDATE] Adding Fileman Wiki to settings screen 
+- [CLEAN] Clean up Fileman code
+- [MINOR BUGFIX] Fix small bug into filedirectory stuff
+
+* Mon Aug 19 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-18
+- [MINOR BUGFIX] Fix display wrong string after install rmp or apk
+
+* Mon Aug 19 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-17
+- [MINOR BUGFIX] Fix install rpm and apk files
+
+* Mon Aug 12 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-16
+- [UPDATE] Updated all translation
+- [UPDATE] Fileman icons to grey style, fix for lite ambiences
+- [MINOR BUGFIX] Fix unknow files as doc, docx, xls, xlsx, pdf
+
+* Fri Aug 9 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-15
+- [UPDATE] Updated all translation
+
+* Wed Aug 7 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-14
+- [MINOR BUGFIX] Fileman play now video's with Sailfish media player
+- [MINOR BUGFIX] Fix to show pictures with uppercase extention
+
+* Fri Jul 26 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-13
+- [UPDATE] Updated all translation
+- [UPDATE] Update to new bookmark icon
+- [MINOR BUGFIX] Small bug fixes
+
+* Sun Jul 21 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-12
+- [MINOR BUGFIX] Shortcut label name, thanks to Markkyboy 
+
+* Sun Jul 21 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-11
+- [UPDATE] Updated translations 
+
+* Sat Jul 20 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-10
+- [MINOR BUGFIX] Updated translations Swedish and Chinees
+- [NEW] Search for file inside directory and show where file is into the directory
+- [MINOR BUGFIX] Other small bug fixes
+
+* Mon Jul 15 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-9
+v1.0-release 9
+- [MINOR BUGFIX] Fix missing translation strings
+- [NEW] Search work into progress !
+- [MINOR BUGFIX] Fix display correct tar and zip archive name
+- [MINOR BUGFIX] Other small bug fixes 
+
+* Sat Jul 13 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-8
+v1.0-release 8
+- [MINOR BUGFIX] Updated translations Swedish and Chinees
+- [NEW] Fileman icons updated inside the app
+- [NEW] Display a black background when viewing image and video files
+- [NEW] Adding cache for pictures to settings, first load take some time
+- [REMOVED] Removed grid view and make list view more complete to show pictures correctly
+
+* Thu Jul 11 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-7
+v1.0-release 7
+- [MINOR BUGFIX] Updated translation
+- [MINOR BUGFIX] Removed cache picture on load and rewrite loading for pictures faster loading, pictures still resize and this take some time when you have a lot 
+- [NEW] Musicplayer now support flac sound files to play
+- [NEW] Fileman icons changed inside the app
+
+* Wed Jul 10 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-6
+v1.0-release 6
+- [MINOR BUGFIX] Updated translation
+- [MINOR BUGFIX] Bug fixes
+- [NEW] Adding List/Grid directory view mode, long file names would be display in smaller font
+- [NEW] Fileman icon thanks to Gregguh.
+
+* Sun Jul 7 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-5
+v1.0-release 5
+- [MINOR BUGFIX] Updated translation
+- [NEW] Adding Root shortcut to the home Places overview
+
+* Thu Jul 6 2019 Rudi Timmermans <rudi.timmer@mail.ch> 1.0-4
+v1.0-release 4
+- [MINOR BUGFIX] Updated translation
+- [MINOR BUGFIX] Fixed small bug into the directory listing
+

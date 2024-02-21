@@ -9,7 +9,7 @@ DirectoryWorker::DirectoryWorker(QObject *parent) :
     imageFormats << "image" << "png" << "jpg" << "jpeg" << "gif" << "svg";
 
     QStringList videoFormats;
-    videoFormats << "video" << "mpg" << "avi" << "mov" << "3gp" << "mp4" << "mkv" << "wmv";
+    videoFormats << "video";
 
     QStringList audioFormats;
     audioFormats << "audio" << "mp3" << "ogg" << "wav";
@@ -20,11 +20,23 @@ DirectoryWorker::DirectoryWorker(QObject *parent) :
     QStringList textFormats;
     textFormats << "text" << "txt" << "conf" << "xml";
 
+    QStringList docFormats;
+    docFormats << "doc";
+
+    QStringList xlsFormats;
+    xlsFormats << "xls";
+
+    QStringList pdfFormats;
+    pdfFormats << "pdf";
+
     m_fileFormats.append(imageFormats);
     m_fileFormats.append(videoFormats);
     m_fileFormats.append(audioFormats);
     m_fileFormats.append(packageFormats);
     m_fileFormats.append(textFormats);
+    m_fileFormats.append(docFormats);
+    m_fileFormats.append(xlsFormats);
+    m_fileFormats.append(pdfFormats);
 }
 
 void DirectoryWorker::run()
@@ -142,7 +154,7 @@ void DirectoryWorker::createFileInfoEntryList()
             {
                 QString format = formats.at(ii);
 
-                if (fileInfo.fileName().endsWith(format))
+                if (fileInfo.fileName().toLower().endsWith(format))
                 {
                     fileType = type;
 

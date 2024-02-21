@@ -103,7 +103,7 @@ Page {
                                             clipboardDir,
                                             selectedFiles,
                                             directory)
-                pageHeader.title = "Copying files"
+                pageHeader.title = qsTr("Copying files")
                 break;
 
             case "delete":
@@ -112,7 +112,7 @@ Page {
                                             clipboardDir,
                                             selectedFiles,
                                             directory)
-                pageHeader.title = "Deleting files"
+                pageHeader.title = qsTr("Deleting files")
                 break;
         }
     }

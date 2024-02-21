@@ -9,7 +9,11 @@
         <file alias="image">data/icons/image-x-generic.svg</file>
         <file alias="video">data/icons/video-x-generic.svg</file>
         <file alias="text">data/icons/text-x-generic.svg</file>
+        <file alias="doc">data/icons/text-x-generic.svg</file>
         <file alias="directory">data/icons/folder.svg</file>
+        <file alias="android">data/icons/android-folder.svg</file>
+        <file alias="close">data/icons/emblem-close.svg</file>
+        <file alias="root">data/icons/root-folder.svg</file>
         <file alias="unknown">data/icons/generic.svg</file>
         <file alias="executable">data/icons/emblem-system.svg</file>
         <file alias="previous">data/icons/go-previous.svg</file>
@@ -20,6 +24,7 @@
         <file alias="package">data/icons/package-x-generic.svg</file>
         <file alias="sdcard">data/icons/media-flash.svg</file>
         <file alias="downloads">data/icons/emblem-downloads.svg</file>
+        <file alias="bookmarks">data/icons/go-bookmarks.svg</file>
         <file alias="up">data/icons/go-up.svg</file>
     </qresource>
 </RCC>

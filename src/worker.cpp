@@ -65,7 +65,7 @@ void Worker::pasteFiles(bool cut)
 
     QTime startTime = QTime::currentTime();
 
-    emit progressTextChanged(QString("Copying files..."));
+    emit progressTextChanged(QString(tr("Copying files...")));
 
     // Create a list of directories to be created
     for (int i=0; i < m_directoryList.count(); i++)
@@ -78,7 +78,7 @@ void Worker::pasteFiles(bool cut)
         directoryList.append(newDirPath);
     }
 
-    emit progressTextChanged("Creating directories...");
+    emit progressTextChanged(tr("Creating directories..."));
 
     qDebug() << "FILES";
 
@@ -113,7 +113,7 @@ void Worker::pasteFiles(bool cut)
     // If any of the directories couldn't be created, abort the process
     if (directoryErrorMap.count() > 0)
     {
-        emit progressTextChanged("Directories couldn't be created.");
+        emit progressTextChanged(tr("Directories couldn't be created."));
         emit fileOperationFinished();
 
         // Abort the process
@@ -138,8 +138,8 @@ void Worker::pasteFiles(bool cut)
         {
             startTime = QTime::currentTime();
 
-            emit progressTextChanged(QString("Copying files (%1 of %2)...").arg(QString("%1").arg(fileCount),
-                                                                                 QString("%1").arg(m_fileMap.count())));
+            emit progressTextChanged(QString(tr("Copying files (%1 of %2)...").arg(QString("%1").arg(fileCount),
+                                                                                 QString("%1").arg(m_fileMap.count()))));
             emit currentEntryChanged(sourceFile.fileName());
 
             double progress = (double)(fileCount) / (double)m_fileMap.count();
@@ -157,9 +157,9 @@ void Worker::pasteFiles(bool cut)
     if (!cut)
     {
         if (fileErrorMap.count() == 0 && directoryErrorMap.count() == 0)
-            emit progressTextChanged("All files were copied successfully.");
+            emit progressTextChanged(tr("All files were copied successfully."));
         else
-            emit progressTextChanged("All files couldn't be copied successfully.");
+            emit progressTextChanged(tr("All files couldn't be copied successfully."));
 
         emit fileOperationFinished();
 
@@ -188,8 +188,8 @@ void Worker::pasteFiles(bool cut)
                 {
                     startTime = QTime::currentTime();
 
-                    emit progressTextChanged(QString("Deleting old files (%1 of %2)...").arg(QString("%1").arg(fileCount),
-                                                                                         QString("%1").arg(m_fileMap.count())));
+                    emit progressTextChanged(QString(tr("Deleting old files (%1 of %2)...").arg(QString("%1").arg(fileCount),
+                                                                                         QString("%1").arg(m_fileMap.count()))));
                     emit currentEntryChanged(sourceFile.fileName());
 
                     double progress = (double)(fileCount) / (double)m_fileMap.count();
@@ -203,7 +203,7 @@ void Worker::pasteFiles(bool cut)
                     fileErrorMap.insert(sourceFilePath, sourceFile.error());
             }
 
-            emit progressTextChanged(QString("Deleting old directories..."));
+            emit progressTextChanged(QString(tr("Deleting old directories...")));
             emit progressValueChanged(-1);
 
             // Then delete the directories
@@ -227,7 +227,7 @@ void Worker::pasteFiles(bool cut)
             if (fileErrorMap.count() == 0 && directoryErrorMap.count() == 0)
                 emit progressTextChanged("All of the files were cut and pasted successfully.");
             else
-                emit progressTextChanged("All of the files couldn't be cut and pasted successfully.");
+                emit progressTextChanged(tr("All of the files couldn't be cut and pasted successfully."));
 
             emit fileOperationFinished();
 
@@ -252,8 +252,8 @@ void Worker::pasteFiles(bool cut)
                 {
                     startTime = QTime::currentTime();
 
-                    emit progressTextChanged(QString("Failed to copy all files, deleting copied files (%1 of %2)...").arg(QString("%1").arg(fileCount),
-                                                                                         QString("%1").arg(m_fileMap.count())));
+                    emit progressTextChanged(QString(tr("Failed to copy all files, deleting copied files (%1 of %2)...").arg(QString("%1").arg(fileCount),
+                                                                                         QString("%1").arg(m_fileMap.count()))));
                     emit currentEntryChanged(newFile.fileName());
 
                     double progress = (double)(fileCount) / (double)m_fileMap.count();
@@ -264,7 +264,7 @@ void Worker::pasteFiles(bool cut)
                 newFile.remove();
             }
 
-            emit progressTextChanged(QString("Failed to copy all files, deleting created directories..."));
+            emit progressTextChanged(QString(tr("Failed to copy all files, deleting created directories...")));
             emit progressValueChanged(-1);
 
             // Delete the directories
@@ -284,7 +284,7 @@ void Worker::pasteFiles(bool cut)
                     directoryErrorMap.insert(newDir, DirDeleteError);
             }
 
-            emit progressTextChanged("All files couldn't be copied successfully.");
+            emit progressTextChanged(tr("All files couldn't be copied successfully."));
 
             emit fileOperationFinished();
         }
@@ -298,7 +298,7 @@ void Worker::deleteFiles()
 {
     buildFileList();
 
-    emit progressTextChanged(QString("Deleting files..."));
+    emit progressTextChanged(QString(tr("Deleting files...")));
 
     QTime startTime = QTime::currentTime();
 
@@ -313,7 +313,7 @@ void Worker::deleteFiles()
         if (QTime::currentTime().msecsTo(startTime) <= -50)
         {
             startTime = QTime::currentTime();
-            emit progressTextChanged(QString("Deleting files (%1 of %2)...").arg(QString("%1").arg(i+1),
+            emit progressTextChanged(QString(tr("Deleting files (%1 of %2)...")).arg(QString("%1").arg(i+1),
                                                                                  QString("%1").arg(m_fileList.count())));
             emit currentEntryChanged(file.fileName());
 
@@ -350,7 +350,7 @@ void Worker::deleteFiles()
         if (QTime::currentTime().msecsTo(startTime) <= -50)
         {
             startTime = QTime::currentTime();
-            emit progressTextChanged(QString("Deleting directories..."));
+            emit progressTextChanged(QString(tr("Deleting directories...")));
             emit currentEntryChanged(dir.dirName());
             emit progressValueChanged(-1);
         }
@@ -358,9 +358,9 @@ void Worker::deleteFiles()
 
     // We are done
     if (fileErrorMap.count() == 0 && directoryErrorMap.count() == 0)
-        emit progressTextChanged("All files were deleted successfully.");
+        emit progressTextChanged(tr("All files were deleted successfully."));
     else
-        emit progressTextChanged("All files couldn't be deleted successfully.");
+        emit progressTextChanged(tr("All files couldn't be deleted successfully."));
 
     emit fileOperationFinished();
 

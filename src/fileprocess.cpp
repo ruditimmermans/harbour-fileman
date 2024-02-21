@@ -29,13 +29,13 @@ bool FileProcess::performFileAction(const QString &fullPath, const QString &acti
 
     if (action == "installApk")
     {
-        program = "apkd-install";
+        program = "xdg-open";
         parameters << fullPath;
     }
     else if (action == "installRpm")
     {
-        program = "pkcon";
-        parameters << "-y" << "-p" << "install-local" << fullPath;
+        program = "xdg-open";
+        parameters << fullPath;
     }
     else if (action == "openSystem")
     {
@@ -72,9 +72,9 @@ bool FileProcess::performFileAction(const QString &fullPath, const QString &acti
 
         // Set suitable progress text
         if (action == "installApk" || action == "installRpm")
-            setProgressText("Installing...");
+            setProgressText(tr("Installing..."));
         else if (action == "openSystem")
-            setProgressText("Opening file...");
+            setProgressText(tr("Opening file..."));
 
         process->start(program, parameters);
     }
@@ -92,9 +92,9 @@ void FileProcess::outputUpdated()
     if (action == "installRpm")
     {
         if (output.contains("Installing"))
-            setProgressText("Installing packages");
+            setProgressText(tr("Installing packages"));
         if (output.contains("Downloading"))
-            setProgressText("Downloading packages");
+            setProgressText(tr("Downloading packages"));
         if (output.contains("Percentage"))
         {
             QString percentageString(output.right(5));
@@ -120,15 +120,15 @@ void FileProcess::processFinished(int exitCode)
         switch (exitCode)
         {
             case 0:
-                setProgressText("Installed");
+                setProgressText(tr("Installed"));
                 break;
 
             case 5:
-                setProgressText("Nothing was done");
+                setProgressText(tr("Nothing was done"));
                 break;
 
             default:
-                setProgressText("Installation failed");
+                setProgressText(tr("Installation failed"));
                 break;
         }
     }
@@ -139,11 +139,11 @@ void FileProcess::processFinished(int exitCode)
         switch (exitCode)
         {
             case 0:
-                setProgressText("Installation was started");
+                setProgressText(tr("Installation was started"));
                 break;
 
             default:
-                setProgressText("Installation couldn't be started");
+                setProgressText(tr("Installation couldn't be started"));
                 break;
         }
     }
@@ -154,15 +154,15 @@ void FileProcess::processFinished(int exitCode)
         switch (exitCode)
         {
             case 0:
-                setProgressText("File opened");
+                setProgressText(tr("File opened"));
                 break;
 
             case 3:
-                setProgressText("Suitable application was not found");
+                setProgressText(tr("Suitable application was not found"));
                 break;
 
             default:
-                setProgressText("File couldn't be opened");
+                setProgressText(tr("File couldn't be opened"));
                 break;
         }
     }

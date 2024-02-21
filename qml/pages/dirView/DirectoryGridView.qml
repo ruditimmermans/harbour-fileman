@@ -16,8 +16,8 @@ SilicaGridView {
 
     property string path: ""
 
-    cellHeight: parent.height > parent.width ? parent.width / 4 : parent.width / 7
-    cellWidth: parent.height > parent.width ? parent.width / 4 : parent.width / 7
+    cellHeight: parent.height > parent.width ? parent.width / 3 : parent.width / 7
+    cellWidth: parent.height > parent.width ? parent.width / 3 : parent.width / 7
 
     width: parent.width
     height: parent.height
@@ -190,19 +190,6 @@ SilicaGridView {
                 color: selectingItems == true ? Theme.highlightColor : Theme.secondaryHighlightColor
             }
 
-            /*Image {
-                id: image
-                asynchronous: true
-                width: fileListView.cellWidth
-                height: fileListView.cellHeight
-                visible: true
-                source: model.thumbnail
-
-                /*Rectangle {
-                    anchors.fill: parent
-                }*/
-            /*}*/
-
             Text {
                 anchors.fill: parent
                 anchors.topMargin: parent.height / 2
@@ -215,8 +202,8 @@ SilicaGridView {
                 verticalAlignment: Text.AlignBottom
                 text: model.fileName.substr(0,32)
                 color: "white"
-                font.pointSize: 20
-                wrapMode: Text.WrapAnywhere
+                fontSizeMode: Text.HorizontalFit
+                font.pixelSize: Theme.fontSizeSmall
 
                 style: Text.Outline
                 styleColor: "black"

@@ -40,6 +40,11 @@ public:
 
     QSettings *settings;
 
+    // Disclaimer
+    Q_INVOKABLE void clean_conf();
+    Q_INVOKABLE void set_accepted_status(const bool &accepted);
+    Q_INVOKABLE bool get_accepted_status();
+
     // Bookmarks
     Q_INVOKABLE QVariant getBookmarks();
     Q_INVOKABLE void addBookmarkPath(const QString &dirPath, const QString &title = QString());

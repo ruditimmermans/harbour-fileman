@@ -4,7 +4,7 @@ function getFileList(fileModel, path)
     // If not, call an asynchronous worker to update it
     var newFileList = fileList.getFileList(path)
 
-    if (newFileList.length == 0)
+    if (newFileList.length === 0)
         fileList.updateFileList(path)
     else
         updateFileList(fileModel, newFileList)
@@ -31,44 +31,49 @@ function updateFileList(fileModel, newFileList)
     }
 
     for (var i=0; i < newFileList.length; i++)
-    {
-        var entry = { "fileName": newFileList[i].fileName,
-                      "fileType": newFileList[i].fileType,
-                      "fullPath": newFileList[i].fullPath,
-                      "path": newFileList[i].path,
-                      "fileSize": newFileList[i].fileSize };
-
-        var cacheThumbnails = settings.cacheThumbnails
-        var displayThumbnails = settings.displayThumbnails
-
-        // Add thumbnail if necessary
-        switch (entry.fileType)
-        {
-            case "image":
-                if (displayThumbnails)
-                {
-                    if (cacheThumbnails)
-                        entry.thumbnail = "image://thumbnail/" + entry.fullPath
-                    else
-                        entry.thumbnail = "file:///" + entry.fullPath
-                }
-                else
-                    entry.thumbnail = "qrc:/icons/image"
-                break;
-
-            default:
-                entry.thumbnail = "qrc:/icons/" + entry.fileType
-
-                if (entry.fileType == "directory" && entry.fileName == "..")
-                    entry.thumbnail = "qrc:/icons/up"
-
-                break;
-        }
-
-        fileModel.append(entry);
-    }
+        fileModel.append( updateEntry(newFileList[i]) );
 
     fileListLoaded = true
+}
+
+/*
+ *  Auxiliary function used by updateFileList() here and SearchEngine object in SearchPage.qml
+ */
+
+function updateEntry(element)
+{
+    var entry = { "fileName": element.fileName,
+                  "fileType": element.fileType,
+                  "fullPath": element.fullPath,
+                  "path": element.path,
+                  "fileSize": element.fileSize };
+    var cacheThumbnails = settings.cacheThumbnails
+    var displayThumbnails = settings.displayThumbnails
+
+    // Add thumbnail if necessary
+    switch (entry.fileType)
+    {
+        case "image":
+            if (displayThumbnails)
+            {
+                if (cacheThumbnails)
+                    entry.thumbnail = "image://thumbnail/" + entry.fullPath
+                else
+                    entry.thumbnail = "file:///" + entry.fullPath
+            }
+            else
+                entry.thumbnail = "qrc:/icons/image"
+            break;
+
+        default:
+            entry.thumbnail = "qrc:/icons/" + entry.fileType
+
+            if (entry.fileType === "directory" && entry.fileName === "..")
+                entry.thumbnail = "qrc:/icons/up"
+
+            break;
+    }
+    return(entry)
 }
 
 /*
@@ -82,17 +87,17 @@ function openFile(entry, fileType)
 
     console.log("File type " + entry.fileType)
 
-    if (entry.fileType != "directory")
+    if (entry.fileType !== "directory")
     {
         console.log("Opening file " + entry.fileName)
 
         // What file types the file manager can display/play
-        var openableFileTypes = [ "image", "audio", "video", "text" ]
+        var openableFileTypes = [ "image", "audio", "video", "text", "doc", "docx", "xls", "xlsx", "pdf" ]
 
         coverModel.setCoverLabel(entry.fileName)
         coverModel.setIconSource(entry.thumbnail)
 
-        if (openableFileTypes.indexOf(fileType) != -1)
+        if (openableFileTypes.indexOf(fileType) !== -1)
         {
             pageStack.push(Qt.resolvedUrl("../pages/FilePage.qml"), { "fileEntry": entry, "displayMode": fileType })
         }
@@ -108,7 +113,7 @@ function openFile(entry, fileType)
         coverModel.setCoverLabel(entry.fullPath)
         coverModel.setIconSource("qrc:/icons/directory")
 
-        if (entry.fileName != "..")
+        if (entry.fileName !== "..")
         {
             directoryPage.openDirectory(entry.fullPath, "left")
         }

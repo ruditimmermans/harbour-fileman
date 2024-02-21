@@ -47,16 +47,17 @@ SilicaListView {
             Label {
                 id: shortcutLabel
 
+                width: parent.width / 1.5
+
                 anchors.left: image.right
                 anchors.leftMargin: 5
-                anchors.right: parent.right
-                anchors.rightMargin: Theme.paddingLarge
                 anchors.top: parent.top
                 anchors.topMargin: model.location == model.name ? (parent.height / 2) - (height / 2) : 5
 
                 font.pixelSize: model.location == model.name ? Theme.fontSizeExtraSmall : Theme.fontSizeSmall
 
                 text: model.name
+                truncationMode: TruncationMode.Fade
             }
             Rectangle {
                 anchors.fill: parent
@@ -152,6 +153,10 @@ SilicaListView {
                            "thumbnail": "qrc:/icons/home",
                            "location": StandardPaths.home })
         listModel.append({ "section": qsTr("Locations"),
+                           "name": qsTr("Root"),
+                           "thumbnail": "qrc:/icons/root",
+                           "location": "/" })
+        listModel.append({ "section": qsTr("Locations"),
                            "name": qsTr("Documents"),
                            "thumbnail": "qrc:/icons/text",
                            "location": StandardPaths.documents })
@@ -171,19 +176,14 @@ SilicaListView {
                            "name": qsTr("Videos"),
                            "thumbnail": "qrc:/icons/video",
                            "location": StandardPaths.videos })
+        listModel.append({ "section": qsTr("Storage devices"),
+                           "name": qsTr("SD-Card"),
+                           "thumbnail": "qrc:/icons/sdcard",
+                           "location": "/run/media/defaultuser/" })
         listModel.append({ "section": qsTr("Android locations"),
                            "name": qsTr("Android storage"),
-                           "thumbnail": "qrc:/icons/directory",
+                           "thumbnail": "qrc:/icons/android",
                            "location": StandardPaths.home + "/android_storage" })
-
-        // Add SD card if it's mounted
-        if (engine.getSdCardMountPath() != "")
-        {
-            listModel.append({ "section": qsTr("Storage devices"),
-                               "name": qsTr("SD card"),
-                               "thumbnail": "qrc:/icons/sdcard",
-                               "location": engine.getSdCardMountPath()})
-        }
 
         // Add bookmarks if there are any
         var bookmarks = settings.getBookmarks()
@@ -194,7 +194,7 @@ SilicaListView {
 
             listModel.append({ "section": qsTr("Bookmarks"),
                                "name": entry,
-                               "thumbnail": "qrc:/icons/directory",
+                               "thumbnail": "qrc:/icons/bookmarks",
                                "location": key,
                                "bookmark": true })
         }

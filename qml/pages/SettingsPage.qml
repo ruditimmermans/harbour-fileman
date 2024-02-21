@@ -4,6 +4,7 @@ import "./components"
 
 Page {
     id: settingspage
+        allowedOrientations: Orientation.All
 
     SilicaFlickable
     {
@@ -15,16 +16,16 @@ Page {
             id: content
             width: parent.width
 
-            PageHeader { title: qsTr("Fileman") }
+            PageHeader { title: qsTr("Settings") }
 
-            SectionHeader { text: qsTr("Settings") }
+            SectionHeader { text: qsTr("Fileman settings") }
 
             ClickableLabel
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
-                icon: "image://theme/icon-m-file-folder"
-                text: qsTr("Directory view")
+                icon: "image://theme/icon-m-file-image"
+                text: qsTr("Cache thumbnails")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("settings/DirectoryViewSettings.qml"))
             }
 
@@ -46,16 +47,18 @@ Page {
                 onActionRequested: pageStack.push(Qt.resolvedUrl("settings/FileDisplay.qml"))
             }
 
-            SectionHeader { text: qsTr("General") }
+            SectionHeader { text: qsTr("Fileman information") }
 
             ClickableLabel
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
                 icon: "image://theme/icon-m-about"
-                text: qsTr("About")
+                text: qsTr("About Fileman")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
             }
+
+            SectionHeader { text: qsTr("Fileman translations") }
 
             ClickableLabel
             {

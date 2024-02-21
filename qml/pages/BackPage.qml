@@ -1,5 +1,6 @@
 import QtQuick 2.2
 import Sailfish.Silica 1.0
+import harbour.fileman.settings 1.0
 
 // A placeholder page that is shown while the actual directory view is loaded or when the application is started
 Page {
@@ -8,6 +9,23 @@ Page {
     allowedOrientations: Orientation.All
 
     property bool appStarted: false
+    property bool accepted: settings.get_accepted_status()
+
+    SettingsObject {
+        id: settings
+    }
+
+    Timer {
+        interval: 50
+        running: accepted && !updated ? false : true
+        repeat: true
+        triggeredOnStart: true
+        onTriggered: { stop()
+            settings.clean_conf()
+            console.log("accepted "+accepted)
+            pageStack.push(Qt.resolvedUrl("Welcome.qml"))
+        }
+    }
 
     onStatusChanged: {
         if (status == PageStatus.Activating) {

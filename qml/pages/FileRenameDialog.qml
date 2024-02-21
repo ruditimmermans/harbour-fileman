@@ -30,7 +30,7 @@ Dialog {
 
         header: DialogHeader {
             id: dialogHeader
-            acceptText: "Rename"
+            acceptText: qsTr("Rename")
         }
         ListModel {
             id: fileModel

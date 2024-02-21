@@ -226,9 +226,9 @@ Item {
             pasteFiles.visible = true
             clipboardLabelVisible = true
             if (clipboard.getClipboardFileCount() == 1)
-                clipboardLabel.text = "1 entry in clipboard"
+                clipboardLabel.text = qsTr("1 entry in clipboard")
             else
-                clipboardLabel.text = clipboard.getClipboardFileCount() + " entries in clipboard"
+                clipboardLabel.text = clipboard.getClipboardFileCount() + qsTr(" entries in clipboard")
         }
         else
         {
@@ -245,9 +245,9 @@ Item {
             shareFiles.visible = true
             selectedFilesLabelVisible = true
             if (clipboard.getSelectedFileCount() == 1)
-                selectedFilesLabel.text = "1 entry selected"
+                selectedFilesLabel.text = qsTr("1 entry selected")
             else
-                selectedFilesLabel.text = clipboard.getSelectedFileCount() + " entries selected"
+                selectedFilesLabel.text = clipboard.getSelectedFileCount() + qsTr(" entries selected")
         }
         else
         {

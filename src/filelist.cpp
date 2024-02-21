@@ -16,7 +16,7 @@ FileList::FileList(QObject *parent) :
     videoFormats << "video" << "mpg" << "avi" << "mov" << "3gp" << "mp4" << "mkv" << "wmv";
 
     QStringList audioFormats;
-    audioFormats << "audio" << "mp3" << "ogg" << "wav";
+    audioFormats << "audio" << "mp3" << "ogg" << "wav" << "flac";
 
     QStringList packageFormats;
     packageFormats << "package" << "apk" << "rpm";
@@ -24,11 +24,27 @@ FileList::FileList(QObject *parent) :
     QStringList textFormats;
     textFormats << "text" << "txt" << "conf" << "xml";
 
+    QStringList docFormats;
+    docFormats << "doc" << "doc" << "docx";
+
+    QStringList xlsFormats;
+    xlsFormats << "doc" << "xls" << "xlsx";
+
+    QStringList pdfFormats;
+    pdfFormats << "doc" << "pdf";
+
+    QStringList archiveFormats;
+    archiveFormats << "tar.gz" << "gz" << "zip";
+
     fileFormats.append(imageFormats);
     fileFormats.append(videoFormats);
     fileFormats.append(audioFormats);
     fileFormats.append(packageFormats);
     fileFormats.append(textFormats);
+    fileFormats.append(docFormats);
+    fileFormats.append(xlsFormats);
+    fileFormats.append(pdfFormats);
+    fileFormats.append(archiveFormats);
 }
 
 /*

@@ -9,6 +9,11 @@ PullDownMenu {
         onClicked: pageStack.push(Qt.resolvedUrl("../SettingsPage.qml"))
     }
     MenuItem {
+        text: qsTr("Global search")
+        visible: 'isShortcutsPage' in getDirectoryView() ? true : false
+        onClicked: pageStack.push(Qt.resolvedUrl("../SearchPage.qml"))
+    }
+    MenuItem {
         id: showHeader
         text: qsTr("Show page header")
         visible: false
@@ -49,9 +54,16 @@ PullDownMenu {
         }
     }
     MenuItem {
-        text: qsTr("New...")
+        text: qsTr("New folder")
         visible: 'isShortcutsPage' in getDirectoryView() ? false : true
         onClicked: getDirectoryPage().addNewFiles()
+    }
+    MenuItem {
+        text: qsTr("Search in directory")
+        visible: 'isShortcutsPage' in getDirectoryView() ? false : true
+        enabled: fileModel.count > 1 ? true : false
+        onClicked: pageStack.push(Qt.resolvedUrl("../SearchPage.qml"),
+                                 { dir: settings.dirPath });
     }
     MenuItem {
         text: qsTr("Places")

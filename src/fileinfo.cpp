@@ -30,28 +30,28 @@ QVariant FileInfo::getFileInfo(const QString &fullPath)
         QVariantMap imageDetails;
 
         // Add details about the image
-        imageDetails.insert("Width", image.width());
-        imageDetails.insert("Height", image.height());
+        imageDetails.insert(tr("Width"), image.width());
+        imageDetails.insert(tr("Height"), image.height());
 
-        detailEntries.insert("Image details", imageDetails);
+        detailEntries.insert(tr("Image details"), imageDetails);
     }
 
     if (!isDir)
     {
         // Add normal file details
-        fileDetails.insert("Size", bytesToString(fileInfo.size()));
-        fileDetails.insert("Last modified", fileInfo.lastModified().toString());
-        fileDetails.insert("Created", fileInfo.created().toString());
+        fileDetails.insert(tr("Size"), bytesToString(fileInfo.size()));
+        fileDetails.insert(tr("Last modified"), fileInfo.lastModified().toString());
+        fileDetails.insert(tr("Created"), fileInfo.created().toString());
 
-        detailEntries.insert("File details", fileDetails);
+        detailEntries.insert(tr("File details"), fileDetails);
     }
     else
     {
         // Add directory details
-        fileDetails.insert("Last modified", fileInfo.lastModified().toString());
-        fileDetails.insert("Created", fileInfo.created().toString());
+        fileDetails.insert(tr("Last modified"), fileInfo.lastModified().toString());
+        fileDetails.insert(tr("Created"), fileInfo.created().toString());
 
-        detailEntries.insert("Directory details", fileDetails);
+        detailEntries.insert(tr("Directory details"), fileDetails);
     }
 
     // Get file format name
@@ -105,32 +105,42 @@ void FileInfo::setFileContent(const QString &fullPath, const QString &content)
 QString FileInfo::getFileFormatName(QString suffix)
 {
     QMap<QString, QString> formatNames;
-    formatNames.insert("png", "PNG image");
-    formatNames.insert("jpg", "JPEG image");
-    formatNames.insert("jpeg", "JPEG image");
-    formatNames.insert("gif", "GIF image");
-    formatNames.insert("svg", "SVG vector image");
+    formatNames.insert("png", tr("PNG image"));
+    formatNames.insert("jpg", tr("JPEG image"));
+    formatNames.insert("jpeg", tr("JPEG image"));
+    formatNames.insert("gif", tr("GIF image"));
+    formatNames.insert("svg", tr("SVG vector image"));
 
-    formatNames.insert("mpg", "MPG video");
-    formatNames.insert("avi", "AVI video");
-    formatNames.insert("mov", "MOV video");
-    formatNames.insert("3gp", "3GP video");
-    formatNames.insert("mp4", "MP4 video");
-    formatNames.insert("mkv", "MKV video");
-    formatNames.insert("wmv", "WMV video");
+    formatNames.insert("mpg", tr("MPG video"));
+    formatNames.insert("avi", tr("AVI video"));
+    formatNames.insert("mov", tr("MOV video"));
+    formatNames.insert("3gp", tr("3GP video"));
+    formatNames.insert("mp4", tr("MP4 video"));
+    formatNames.insert("mkv", tr("MKV video"));
+    formatNames.insert("wmv", tr("WMV video"));
 
-    formatNames.insert("mp3", "MP3 audio");
-    formatNames.insert("ogg", "OGG audio");
+    formatNames.insert("mp3", tr("MP3 audio"));
+    formatNames.insert("ogg", tr("OGG audio"));
+    formatNames.insert("flac", tr("FLAC audio"));
 
-    formatNames.insert("apk", "Android application package");
-    formatNames.insert("rpm", "RPM package");
+    formatNames.insert("apk", tr("Android application package"));
+    formatNames.insert("rpm", tr("RPM package"));
 
-    formatNames.insert("txt", "Text file");
+    formatNames.insert("txt", tr("Text file"));
+    formatNames.insert("doc", tr("Word document"));
+    formatNames.insert("docx", tr("Word 2007 document"));
+    formatNames.insert("xls", tr("Excel spreadsheet"));
+    formatNames.insert("xlsx", tr("Excel 2007 spreadsheet"));
+    formatNames.insert("pdf", tr("PDF document"));
 
-    if (formatNames.contains(suffix))
+    formatNames.insert("tar.gz", tr("TAR.GZ archive"));
+    formatNames.insert("gz", tr("TAR.GZ archive"));
+    formatNames.insert("zip", tr("ZIP archive"));
+
+    if (formatNames.contains(suffix.toLower()))
         return formatNames.value(suffix);
     else
-        return "unknown";
+        return tr("unknown");
 }
 
 QString FileInfo::bytesToString(qint64 bytes)
@@ -205,20 +215,38 @@ QVariantMap FileInfo::getFileActions(QString fullPath)
     // Don't allow users to perform these actions if the file is actually a directory
     if (!fileInfo.isDir())
     {
+        QVariantMap apkAction;
+        apkAction.insert("label", tr("Install"));
+        apkAction.insert("action", "installApk");
+        apkAction.insert("track", true);
+        actionMap.insert("Install", apkAction);
+    }
+    if (fileInfo.suffix() == "rpm")
+    {
+        QVariantMap rpmAction;
+        rpmAction.insert("label", tr("Install"));
+        rpmAction.insert("action", "installRpm");
+        rpmAction.insert("track", true);
+        actionMap.insert("Install", rpmAction);
+    }
+
+    // Don't allow users to perform these actions if the file is actually a directory
+    if (!fileInfo.isDir())
+    {
         QVariantMap textAction;
-        textAction.insert("label", "Show as text");
+        textAction.insert("label", tr("Show as text"));
         textAction.insert("action", "showAsText");
         textAction.insert("process", false);
         actionMap.insert("Show as text", textAction);
 
         QVariantMap editAsTextAction;
-        editAsTextAction.insert("label", "Edit as text");
+        editAsTextAction.insert("label", tr("Edit as text"));
         editAsTextAction.insert("action", "editAsText");
         editAsTextAction.insert("process", false);
         actionMap.insert("Edit as text", editAsTextAction);
 
         QVariantMap openSystemAction;
-        openSystemAction.insert("label", "Open");
+        openSystemAction.insert("label", tr("Open"));
         openSystemAction.insert("action", "openSystem");
         openSystemAction.insert("process", true);
         actionMap.insert("Open", openSystemAction);
@@ -227,7 +255,7 @@ QVariantMap FileInfo::getFileActions(QString fullPath)
     if (fileInfo.isExecutable() && !fileInfo.isDir())
     {
         QVariantMap executeAction;
-        executeAction.insert("label", "Execute");
+        executeAction.insert("label", tr("Execute"));
         executeAction.insert("action", "execute");
         actionMap.insert("Execute", executeAction);
     }

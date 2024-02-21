@@ -5,7 +5,7 @@ import "./components"
 Page
 {
     id: developerspage
-    allowedOrientations: Orientation.Portrait
+        allowedOrientations: Orientation.All
 
     SilicaFlickable
     {
@@ -18,8 +18,8 @@ Page
         {
             MenuItem
             {
-                text: qsTr("Translation Platform")
-                onClicked: Qt.openUrlExternally("https://www.transifex.com/sailbook/fileman-1")
+                text: qsTr("GitHub translations")
+                onClicked: Qt.openUrlExternally("https://github.com/ruditimmermans/harbour-fileman/tree/main/translations")
             }
         }
 
@@ -36,24 +36,36 @@ Page
             }
 
             CollaboratorsLabel {
+                title: "Portugees"
+                labelData: [ "Rafaelvlmendes" ]
+            }
+            CollaboratorsLabel {
                 title: "Chinese"
-                labelData: [ "Historyscholar" ]
+                labelData: [ "Dashinfantry" ]
             }
             CollaboratorsLabel {
                 title: "Spanish"
-                labelData: [ "carmenfdezb" ]
+                labelData: [ "Carmenfdezb" ]
             }
             CollaboratorsLabel {
                 title: "German"
-                labelData: [ "inta" ]
+                labelData: [ "Inta" ]
             }
             CollaboratorsLabel {
                 title: "Swedish"
-                labelData: [ "eson" ]
+                labelData: [ "Eson" ]
             }
             CollaboratorsLabel {
                 title: "Polish"
-                labelData: [ "atlochowski" ]
+                labelData: [ "Atlochowski" ]
+            }
+            CollaboratorsLabel {
+                title: "Italian"
+                labelData: [ "Fravaccaro" ]
+            }
+            CollaboratorsLabel {
+                title: "Portuguese (Brazil)"
+                labelData: [ "Marreko" ]
             }
         }
     }

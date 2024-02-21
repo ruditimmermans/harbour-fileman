@@ -11,6 +11,14 @@ Page {
     property string currentDir: settings.dirPath
 
     property var currentView: null
+    property string dir // will be set on search, otherwise ignored
+
+    Component.onCompleted: {
+        // dir from search
+        if(dir) {
+            openDirectory(dir)
+        }
+    }
 
     showNavigationIndicator: false
     backNavigation: false
@@ -117,7 +125,7 @@ Page {
         collapseDirection = typeof collapseDirection !== 'undefined' ? collapseDirection : "left"
         skipAnimation = typeof skipAnimation !== 'undefined' ? skipAnimation : false
         viewMode = typeof viewMode !== 'undefined' ? viewMode : "list"
-//        viewMode = typeof viewMode !== 'undefined' ? viewMode : settings.defaultViewMode
+        //viewMode = typeof viewMode !== 'undefined' ? viewMode : settings.defaultViewMode
 
         // Clear the list of selected files
         clipboard.clearSelectedFiles()
@@ -237,20 +245,20 @@ Page {
         switch (fileOperation)
         {
             case "delete":
-                popupMessage += "Deleting "
+                popupMessage += qsTr("Deleting ")
                 entryCount = clipboard.getSelectedFileCount()
                 break;
 
             case "paste":
-                popupMessage += "Copying "
+                popupMessage += qsTr("Copying ")
                 entryCount = clipboard.getClipboardFileCount()
                 break;
         }
 
         if (entryCount == 1)
-            popupMessage += entryCount + " entry"
+            popupMessage += entryCount + qsTr(" entry")
         else
-            popupMessage += entryCount + " entries"
+            popupMessage += entryCount + qsTr(" entries")
 
         remorsePopup.execute(popupMessage, function() { pageStack.push(Qt.resolvedUrl("FileOperationPage.qml"), { "fileOperation": fileOperation,
                                                                                                                   "clipboard": clipboard.getClipboard(),

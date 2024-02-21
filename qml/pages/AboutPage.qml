@@ -3,11 +3,28 @@ import Sailfish.Silica 1.0
 import "./components"
 
 Page {
+        allowedOrientations: Orientation.All
+
     SilicaFlickable {
         anchors.fill: parent
         contentHeight: aboutColumn.height
 
         VerticalScrollDecorator {}
+
+        PullDownMenu
+        {
+            MenuItem
+            {
+                text: qsTr("GitHub Repository")
+                onClicked: Qt.openUrlExternally("https://github.com/ruditimmermans/harbour-fileman")
+            }
+
+            MenuItem
+            {
+                text: qsTr("Report an Issue")
+                onClicked: Qt.openUrlExternally("https://github.com/ruditimmermans/harbour-fileman/issues")
+            }
+        }
 
         Column {
             id: aboutColumn
@@ -28,7 +45,7 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Rudi Timmermans")
                 iconSource: "qrc:/images/developer"
-                onClicked: { Qt.openUrlExternally("https://www.twitter.com/xray20001");
+                onClicked: { Qt.openUrlExternally("https://github.com/ruditimmermans");
                 }
             }
 
@@ -36,12 +53,15 @@ Page {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Donate with Paypal")
                 iconSource: "qrc:/images/paypal"
-                onClicked: { Qt.openUrlExternally("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=29THE9VFMZ4PS");
+                onClicked: { Qt.openUrlExternally("https://www.paypal.com/donate?hosted_button_id=K85Y233EKB5N4");
                 }
             }
 
             SectionHeader { text: qsTr("Icons") }
-            TextLabel { labelText: qsTr("Fileman icons made by Molan and levone1.") }
+            TextLabel { labelText: qsTr("Fileman icons made by Gregguh.") }
+
+            SectionHeader { text: qsTr("Thanking") }
+            TextLabel { labelText: qsTr("Thanks to Velox for the help on the Search function.") }
 
             SectionHeader { text: qsTr("Version") }
             TextLabel { labelText: mainWindow.appName + " v" + mainWindow.version }

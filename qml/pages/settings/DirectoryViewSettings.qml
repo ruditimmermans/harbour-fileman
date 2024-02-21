@@ -16,29 +16,16 @@ Page {
             spacing: Theme.paddingLarge
             width: parent.width
             PageHeader {
-                title: qsTr("Directory view")
+                title: qsTr("Cache thumbnails")
             }
 
             SectionHeader {
-                id: directoryLookHeader
-                text: qsTr("Thumbnails")
-            }
-
-            Column {
-                width: parent.width
-            }
+                    text: qsTr("Thumbnails")
+                }
 
             Column {
                 // No spacing in this column
                 width: parent.width
-                TextSwitch {
-                    text: qsTr("Display thumbnails")
-                    description: qsTr("Display thumbnails for image files")
-
-                    checked: settings.displayThumbnails
-
-                    onCheckedChanged: settings.displayThumbnails = checked
-                }
                 TextSwitch {
                     text: qsTr("Cache thumbnails")
                     description: qsTr("Save generated thumbnails for faster loading")
@@ -46,8 +33,10 @@ Page {
                     checked: settings.cacheThumbnails
 
                     onCheckedChanged: settings.cacheThumbnails = checked
+                    }
                 }
             }
         }
     }
- }
+
+

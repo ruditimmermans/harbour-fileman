@@ -7,7 +7,7 @@ Dialog {
     property string operation: ""
     property string path: ""
 
-    property string currentFileType: "directory"
+    property string currentFileType: qsTr("directory")
 
     property var files: [ ]
 
@@ -27,11 +27,9 @@ Dialog {
         height: parent.height
         width: parent.width
 
-        model: fileModel
-
         header: DialogHeader {
             id: dialogHeader
-            acceptText: "Add"
+            acceptText: qsTr("Add")
         }
 
         ListModel {
@@ -127,7 +125,7 @@ Dialog {
                     verticalAlignment: Text.AlignVCenter
 
                     // TODO: Allow user to create files
-                    text: "Add new "
+                    text: qsTr("Add new ")
                 }
                 Label {
                     width: paintedWidth
@@ -158,11 +156,11 @@ Dialog {
                 id: contextMenu
 
                 MenuItem {
-                    text: "directory"
+                    text: qsTr("directory")
                     onClicked: currentFileType = "directory"
                 }
                 MenuItem {
-                    text: "file"
+                    text: qsTr("file")
                     onClicked: currentFileType = "file"
                 }
             }

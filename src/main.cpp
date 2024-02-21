@@ -10,14 +10,18 @@
 #include "filelist.h"
 #include "fileengine.h"
 #include "covermodel.h"
+#include "searchengine.h"
 
 
 int main(int argc, char *argv[])
 {
+    qmlRegisterType<SearchEngine>("harbour.fileman.SearchEngine", 1, 0, "SearchEngine");
     qRegisterMetaType<QList<FileInfoEntry*> >();
 
     QGuiApplication *app = SailfishApp::application(argc, argv);
     QQuickView *view = SailfishApp::createView();
+
+    qmlRegisterType<Settings>("harbour.fileman.settings",1,0,"SettingsObject");
 
     // Add image providers and C++ classes
     view->engine()->addImageProvider(QLatin1String("thumbnail"), new ThumbnailProvider);
