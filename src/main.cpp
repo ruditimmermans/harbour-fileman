@@ -1,0 +1,40 @@
+#ifdef QT_QML_DEBUG
+#include <QtQuick>
+#endif
+
+#include <QtQuick>
+
+#include <sailfishapp.h>
+#include "thumbnailprovider.h"
+#include "settings.h"
+#include "filelist.h"
+#include "fileengine.h"
+#include "covermodel.h"
+
+
+int main(int argc, char *argv[])
+{
+    qRegisterMetaType<QList<FileInfoEntry*> >();
+
+    QGuiApplication *app = SailfishApp::application(argc, argv);
+    QQuickView *view = SailfishApp::createView();
+
+    // Add image providers and C++ classes
+    view->engine()->addImageProvider(QLatin1String("thumbnail"), new ThumbnailProvider);
+
+    FileEngine fileEngine;
+    view->engine()->rootContext()->setContextProperty("engine", &fileEngine);
+    view->engine()->rootContext()->setContextProperty("fileList", fileEngine.fileList);
+    view->engine()->rootContext()->setContextProperty("fileInfo", fileEngine.fileInfo);
+    view->engine()->rootContext()->setContextProperty("fileProcess", fileEngine.fileProcess);
+    view->engine()->rootContext()->setContextProperty("clipboard", fileEngine.clipboard);
+    view->engine()->rootContext()->setContextProperty("settings", fileEngine.settings);
+    view->engine()->rootContext()->setContextProperty("coverModel", fileEngine.coverModel);
+
+    // Show the application
+    view->setSource(SailfishApp::pathTo("qml/Fileman.qml"));
+    view->show();
+
+    return app->exec();
+}
+
