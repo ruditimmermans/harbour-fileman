@@ -21,6 +21,7 @@ Fileman a tool to view files on Sailfish OS.
 - Show hidden files
 - Change permissions
 - Share files
+- Root mode
 
 ## License
 GNU General Public License v3.0
