@@ -137,10 +137,6 @@
         <translation>Instellingen</translation>
     </message>
     <message>
-        <source>Global search</source>
-        <translation>Globaal zoeken</translation>
-    </message>
-    <message>
         <source>Show page header</source>
         <translation>Toon paginakop</translation>
     </message>
@@ -167,6 +163,10 @@
     <message>
         <source>New folder</source>
         <translation>Nieuwe map</translation>
+    </message>
+    <message>
+        <source>Global search</source>
+        <translation>Globaal zoeken</translation>
     </message>
 </context>
 <context>
@@ -520,20 +520,20 @@
 <context>
     <name>NewFilesDialog</name>
     <message>
-        <source>Add</source>
-        <translation>Toevoegen</translation>
+        <source>Type</source>
+        <translation>Type</translation>
     </message>
     <message>
-        <source>Add new </source>
-        <translation>Nieuwe </translation>
+        <source>File</source>
+        <translation>Bestand</translation>
     </message>
     <message>
-        <source>directory</source>
-        <translation>map</translation>
+        <source>Name…</source>
+        <translation>Naam...</translation>
     </message>
     <message>
-        <source>file</source>
-        <translation>bestand</translation>
+        <source>Map</source>
+        <translation>Map</translation>
     </message>
 </context>
 <context>
@@ -669,6 +669,23 @@
         <source>About Fileman</source>
         <translation>Over Fileman</translation>
     </message>
+    <message>
+        <source></source>
+        <comment>Activate root mode</comment>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fileman root mode</source>
+        <translation>Fileman root-modus</translation>
+    </message>
+    <message>
+        <source>Start into user mode</source>
+        <translation>Start in de gebruikersmodus</translation>
+    </message>
+    <message>
+        <source>Start into root mode</source>
+        <translation>Start in de rootmodus</translation>
+    </message>
 </context>
 <context>
     <name>ShareFilesPage</name>
@@ -724,10 +741,6 @@
         <translation>Videos</translation>
     </message>
     <message>
-        <source>Android locations</source>
-        <translation>Android locaties</translation>
-    </message>
-    <message>
         <source>Android storage</source>
         <translation>Android opslag</translation>
     </message>
@@ -742,6 +755,10 @@
     <message>
         <source>SD-Card</source>
         <translation>SD-Kaart</translation>
+    </message>
+    <message>
+        <source>Android location</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

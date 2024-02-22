@@ -1,4 +1,4 @@
-import QtQuick 2.2
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 import "../../js/misc.js" as Misc
 import "../../js/directoryViewModel.js" as DirectoryViewModel

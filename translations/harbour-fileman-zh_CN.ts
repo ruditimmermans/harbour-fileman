@@ -137,10 +137,6 @@
         <translation>设置</translation>
     </message>
     <message>
-        <source>Global search</source>
-        <translation>全局搜索</translation>
-    </message>
-    <message>
         <source>Show page header</source>
         <translation>显示页面标头</translation>
     </message>
@@ -166,6 +162,10 @@
     </message>
     <message>
         <source>New folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Global search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -520,20 +520,20 @@
 <context>
     <name>NewFilesDialog</name>
     <message>
-        <source>Add</source>
-        <translation>添加</translation>
+        <source>Type</source>
+        <translation type="unfinished">类型</translation>
     </message>
     <message>
-        <source>Add new </source>
-        <translation>添加新的</translation>
+        <source>File</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>directory</source>
-        <translation>目录</translation>
+        <source>Name…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>file</source>
-        <translation>文件</translation>
+        <source>Map</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -669,6 +669,23 @@
         <source>About Fileman</source>
         <translation>关于 Fileman</translation>
     </message>
+    <message>
+        <source></source>
+        <comment>Activate root mode</comment>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fileman root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start into user mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start into root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareFilesPage</name>
@@ -724,10 +741,6 @@
         <translation>视频</translation>
     </message>
     <message>
-        <source>Android locations</source>
-        <translation>Android 位置</translation>
-    </message>
-    <message>
         <source>Android storage</source>
         <translation>Android 存储</translation>
     </message>
@@ -741,6 +754,10 @@
     </message>
     <message>
         <source>SD-Card</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Android location</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

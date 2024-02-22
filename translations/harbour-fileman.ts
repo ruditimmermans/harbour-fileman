@@ -137,10 +137,6 @@
         <translation type="unfinished">Settings</translation>
     </message>
     <message>
-        <source>Global search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Show page header</source>
         <translation type="unfinished"></translation>
     </message>
@@ -166,6 +162,10 @@
     </message>
     <message>
         <source>New folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Global search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -520,19 +520,19 @@
 <context>
     <name>NewFilesDialog</name>
     <message>
-        <source>Add</source>
+        <source>Type</source>
+        <translation type="unfinished">Type</translation>
+    </message>
+    <message>
+        <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Add new </source>
+        <source>Name…</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>directory</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>file</source>
+        <source>Map</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -669,6 +669,23 @@
         <source>About Fileman</source>
         <translation type="unfinished">About Fileman</translation>
     </message>
+    <message>
+        <source></source>
+        <comment>Activate root mode</comment>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fileman root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start into user mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start into root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareFilesPage</name>
@@ -724,10 +741,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Android locations</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Android storage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -741,6 +754,10 @@
     </message>
     <message>
         <source>SD-Card</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Android location</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

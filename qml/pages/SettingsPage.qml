@@ -1,5 +1,6 @@
-import QtQuick 2.1
+import QtQuick 2.5
 import Sailfish.Silica 1.0
+import QtQml.Models 2.2
 import "./components"
 
 Page {
@@ -17,6 +18,17 @@ Page {
             width: parent.width
 
             PageHeader { title: qsTr("Settings") }
+
+            SectionHeader { text: qsTr("Fileman root mode") }
+
+            TextSwitch {
+                width: parent.width
+                height: Theme.itemSizeSmall
+                text: engine.rootMode ? qsTr("Start into user mode") : qsTr("Start into root mode")
+                checked: engine.rootMode
+                onClicked: engine.rootMode = !engine.rootMode
+                automaticCheck: false
+            }
 
             SectionHeader { text: qsTr("Fileman settings") }
 

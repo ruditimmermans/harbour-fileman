@@ -1,9 +1,12 @@
 #include "fileengine.h"
+#include <unistd.h>
+#include <sys/types.h>
 
 FileEngine::FileEngine(QObject *parent) :
     QObject(parent)
 {
     m_currentFileIndex = -1;
+    setRootMode(QFile::exists("/tmp/fileman_root"));
 
     fileList = new FileList();
     fileInfo = new FileInfo();
@@ -252,6 +255,34 @@ else if (QDir("/media/sdcard").exists())
     folder = "/media/sdcard";
 
 return folder;
+}
+
+bool FileEngine::getRootMode()
+{
+    return _rootMode;
+}
+
+void FileEngine::setRootMode(bool rootMode)
+{
+    if (rootMode) {
+        QFile file("/tmp/fileman_root");
+        file.open(QIODevice::WriteOnly);
+        file.close();
+
+        if (setuid(0)) {
+            perror("setuid");
+            exit(1);
+        }
+    } else {
+        QFile::remove("/tmp/fileman_root");
+        if (setuid(100000)) {
+            perror("setuid");
+            exit(1);
+        }
+    }
+
+    _rootMode = rootMode;
+    emit rootModeChanged(rootMode);
 }
 
 /*

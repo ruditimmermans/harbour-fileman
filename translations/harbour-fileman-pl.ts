@@ -137,10 +137,6 @@
         <translation type="unfinished">Ustawienia</translation>
     </message>
     <message>
-        <source>Global search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Show page header</source>
         <translation type="unfinished"></translation>
     </message>
@@ -166,6 +162,10 @@
     </message>
     <message>
         <source>New folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Global search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -520,20 +520,20 @@
 <context>
     <name>NewFilesDialog</name>
     <message>
-        <source>Add</source>
-        <translation>Dodaj</translation>
+        <source>Type</source>
+        <translation type="unfinished">Typ</translation>
     </message>
     <message>
-        <source>Add new </source>
-        <translation>Dodaj nowy</translation>
+        <source>File</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>directory</source>
-        <translation>katalog</translation>
+        <source>Name…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>file</source>
-        <translation>plik</translation>
+        <source>Map</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -669,6 +669,23 @@
         <source>About Fileman</source>
         <translation>O Fileman</translation>
     </message>
+    <message>
+        <source></source>
+        <comment>Activate root mode</comment>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Fileman root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start into user mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start into root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareFilesPage</name>
@@ -724,10 +741,6 @@
         <translation>Filmy</translation>
     </message>
     <message>
-        <source>Android locations</source>
-        <translation>Miejsca Android</translation>
-    </message>
-    <message>
         <source>Android storage</source>
         <translation type="unfinished"></translation>
     </message>
@@ -741,6 +754,10 @@
     </message>
     <message>
         <source>SD-Card</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Android location</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -1,6 +1,5 @@
 [Desktop Entry]
 Type=Application
-X-Nemo-Application-Type=silica-qt5
 Name=Fileman
 Icon=harbour-fileman
 Exec=harbour-fileman

@@ -1,4 +1,4 @@
-import QtQuick 2.2
+import QtQuick 2.5
 import Sailfish.Silica 1.0
 import "../../js/directoryViewModel.js" as DirectoryViewModel
 import "../../js/misc.js" as Misc
@@ -176,7 +176,7 @@ SilicaListView {
                            "name": qsTr("Videos"),
                            "thumbnail": "qrc:/icons/video",
                            "location": StandardPaths.videos })
-        listModel.append({ "section": qsTr("Android locations"),
+        listModel.append({ "section": qsTr("Android location"),
                            "name": qsTr("Android storage"),
                            "thumbnail": "qrc:/icons/android",
                            "location": StandardPaths.home + "/android_storage" })
