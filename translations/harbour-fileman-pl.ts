@@ -518,6 +518,25 @@
     </message>
 </context>
 <context>
+    <name>FileRoot</name>
+    <message>
+        <source>Root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Root</source>
+        <translation type="unfinished">Root</translation>
+    </message>
+    <message>
+        <source>Start into user mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start into root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>NewFilesDialog</name>
     <message>
         <source>Type</source>
@@ -676,14 +695,6 @@
     </message>
     <message>
         <source>Fileman root mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Start into user mode</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Start into root mode</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

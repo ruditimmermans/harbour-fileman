@@ -21,13 +21,13 @@ Page {
 
             SectionHeader { text: qsTr("Fileman root mode") }
 
-            TextSwitch {
+            ClickableLabel
+            {
                 width: parent.width
                 height: Theme.itemSizeSmall
-                text: engine.rootMode ? qsTr("Start into user mode") : qsTr("Start into root mode")
-                checked: engine.rootMode
-                onClicked: engine.rootMode = !engine.rootMode
-                automaticCheck: false
+                icon: "image://theme/icon-s-developer"
+                text: qsTr("Fileman root mode")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("settings/FileRoot.qml"))
             }
 
             SectionHeader { text: qsTr("Fileman settings") }

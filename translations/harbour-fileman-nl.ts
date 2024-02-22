@@ -518,6 +518,25 @@
     </message>
 </context>
 <context>
+    <name>FileRoot</name>
+    <message>
+        <source>Root mode</source>
+        <translation>Root-modus</translation>
+    </message>
+    <message>
+        <source>Root</source>
+        <translation>Root</translation>
+    </message>
+    <message>
+        <source>Start into user mode</source>
+        <translation>Start in de gebruikersmodus</translation>
+    </message>
+    <message>
+        <source>Start into root mode</source>
+        <translation>Start in de rootmodus</translation>
+    </message>
+</context>
+<context>
     <name>NewFilesDialog</name>
     <message>
         <source>Type</source>
@@ -677,14 +696,6 @@
     <message>
         <source>Fileman root mode</source>
         <translation>Fileman root-modus</translation>
-    </message>
-    <message>
-        <source>Start into user mode</source>
-        <translation>Start in de gebruikersmodus</translation>
-    </message>
-    <message>
-        <source>Start into root mode</source>
-        <translation>Start in de rootmodus</translation>
     </message>
 </context>
 <context>
