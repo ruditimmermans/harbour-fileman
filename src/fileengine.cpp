@@ -240,19 +240,18 @@ bool FileEngine::changeFilePermission(QString fullPath, int permissionPos)
     return success;
 }
 
-/*
- *  Check if the SD card is mounted
- *  If it is, return the mount point path
- *  If not, return an empty string
- */
 QString FileEngine::getSdCardMountPath()
 {
-    if (QDir("/run/user/media/sdcard").exists())
-        return "/run/user/media/sdcard";
-    else if (QDir("/media/sdcard").exists())
-        return "/media/sdcard";
-    else
-        return "";
+    QString folder = "";
+
+if (QDir("/run/media/defaultuser").exists())
+    folder = "/run/media/defaultuser";
+else if (QDir("/run/media/nemo").exists())
+    folder = "/run/media/nemo";
+else if (QDir("/media/sdcard").exists())
+    folder = "/media/sdcard";
+
+return folder;
 }
 
 /*

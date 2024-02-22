@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/Xray1870/harbour-fileman/master/icons/256x256/harbour-fileman.png" width="256px" alt="Fileman">
+  <img src="https://raw.githubusercontent.com/ruditimmermans/harbour-fileman/master/icons/256x256/harbour-fileman.png" width="256px" alt="Fileman">
   <br>
   <br>
   Fileman
@@ -21,9 +21,6 @@ Fileman a tool to view files on Sailfish OS.
 - Show hidden files
 - Change permissions
 - Share files
-
-## I want to contribute
-You can find more information on how to help in the [Fileman wiki](https://github.com/Xray1870/harbour-fileman/wiki).
 
 ## License
 GNU General Public License v3.0

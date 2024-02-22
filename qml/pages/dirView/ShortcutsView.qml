@@ -176,14 +176,19 @@ SilicaListView {
                            "name": qsTr("Videos"),
                            "thumbnail": "qrc:/icons/video",
                            "location": StandardPaths.videos })
-        listModel.append({ "section": qsTr("Storage devices"),
-                           "name": qsTr("SD-Card"),
-                           "thumbnail": "qrc:/icons/sdcard",
-                           "location": "/run/media/defaultuser/" })
         listModel.append({ "section": qsTr("Android locations"),
                            "name": qsTr("Android storage"),
                            "thumbnail": "qrc:/icons/android",
                            "location": StandardPaths.home + "/android_storage" })
+
+        // Add SD card if it's mounted
+        if (engine.getSdCardMountPath() != "")
+        {
+            listModel.append({ "section": qsTr("Storage devices"),
+                               "name": qsTr("SD-Card"),
+                               "thumbnail": "qrc:/icons/sdcard",
+                               "location": engine.getSdCardMountPath()})
+        }
 
         // Add bookmarks if there are any
         var bookmarks = settings.getBookmarks()
