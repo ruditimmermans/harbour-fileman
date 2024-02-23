@@ -697,6 +697,10 @@
         <source>Fileman root mode</source>
         <translation>Fileman root-modus</translation>
     </message>
+    <message>
+        <source>Root mode</source>
+        <translation>Root-modus</translation>
+    </message>
 </context>
 <context>
     <name>ShareFilesPage</name>

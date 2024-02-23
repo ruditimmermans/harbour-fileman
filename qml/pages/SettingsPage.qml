@@ -26,7 +26,7 @@ Page {
                 width: parent.width
                 height: Theme.itemSizeSmall
                 icon: "image://theme/icon-s-developer"
-                text: qsTr("Fileman root mode")
+                text: qsTr("Root mode")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("settings/FileRoot.qml"))
             }
 

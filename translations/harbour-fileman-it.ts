@@ -697,6 +697,10 @@
         <source>Fileman root mode</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ShareFilesPage</name>
