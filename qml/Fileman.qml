@@ -46,7 +46,7 @@ ApplicationWindow
     property string version: "1.3-rc2"
 
     initialPage: Qt.resolvedUrl("pages/BackPage.qml")
-    cover: Qt.resolvedUrl("cover/CoverPage.qml")
+    cover: undefined
 }
 
 
