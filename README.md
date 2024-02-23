@@ -3,7 +3,13 @@
   <img src="https://raw.githubusercontent.com/ruditimmermans/harbour-fileman/master/icons/256x256/harbour-fileman.png" width="256px" alt="Fileman">
   <br>
   <br>
-  Fileman
+  <img src="https://github.com/ruditimmermans/harbour-fileman/blob/main/Screenshots/Screen1.png" width="256px">
+  <br>
+  <br>
+  <img src="https://github.com/ruditimmermans/harbour-fileman/blob/main/Screenshots/Screen2.png" width="256px">
+  <br>
+  <br>
+  <img src="https://github.com/ruditimmermans/harbour-fileman/blob/main/Screenshots/Screen3.png" width="256px">
   <br>
   <br>
 </h1>
