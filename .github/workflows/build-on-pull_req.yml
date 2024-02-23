@@ -1,0 +1,40 @@
+name: CI on PRs with SDK (aarch64)
+
+env:
+  RELEASE: 4.5.0.16
+  ARCH: aarch64
+  SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
+
+on:
+  pull_request:
+    branches:
+      - devel
+      - master
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: sh
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Prepare
+      run: mkdir RPMS
+
+    - name: Build ${{ env.ARCH }}
+      uses: coderus/github-sfos-build@old-stable
+      with:
+        release: ${{ env.RELEASE }}
+        arch: ${{ env.ARCH }}
+
+    - name: Upload build result
+      uses: actions/upload-artifact@v3
+      with:
+        name: RPM-build-results_${{ github.base_ref }}-${{ env.ARCH }}-SFOS${{ env.RELEASE }}+
+        path: RPMS/
