@@ -1,6 +1,7 @@
 <h1 align="center">
   <br>
   <img src="https://raw.githubusercontent.com/ruditimmermans/harbour-fileman/master/icons/256x256/harbour-fileman.png" width="256px" alt="Fileman">
+<h1 align="left">
   <br>
   <br>
   <img src="https://github.com/ruditimmermans/harbour-fileman/blob/main/Screenshots/Screen1.png" width="256px">
