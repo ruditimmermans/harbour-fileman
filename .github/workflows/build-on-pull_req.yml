@@ -6,8 +6,12 @@ env:
   SEGMENT_DOWNLOAD_TIMEOUT_MINS: 2
 
 on:
+  push:
+    tags:
+      - '*'
   pull_request:
     branches:
+    
       - master
 
 defaults:
