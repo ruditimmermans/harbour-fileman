@@ -134,39 +134,39 @@
     <name>DirectoryPullDownMenu</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <source>Show page header</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa sidhuvud</translation>
     </message>
     <message>
         <source>Don&apos;t show page header</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa inte sidhuvud</translation>
     </message>
     <message>
         <source>Show hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa dolda filer</translation>
     </message>
     <message>
         <source>Don&apos;t show hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa inte dolda filer</translation>
     </message>
     <message>
         <source>Places</source>
-        <translation type="unfinished">Platser</translation>
+        <translation>Platser</translation>
     </message>
     <message>
         <source>Search in directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök i mappen</translation>
     </message>
     <message>
         <source>New folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny mapp</translation>
     </message>
     <message>
         <source>Global search</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök överallt</translation>
     </message>
 </context>
 <context>
@@ -521,38 +521,38 @@
     <name>FileRoot</name>
     <message>
         <source>Root mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Root-läge</translation>
     </message>
     <message>
         <source>Root</source>
-        <translation type="unfinished">Root</translation>
+        <translation>Root</translation>
     </message>
     <message>
         <source>Start into user mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta i användarläge</translation>
     </message>
     <message>
         <source>Start into root mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta i root-läge</translation>
     </message>
 </context>
 <context>
     <name>NewFilesDialog</name>
     <message>
         <source>Type</source>
-        <translation type="unfinished">Typ</translation>
+        <translation>Typ</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Fil</translation>
     </message>
     <message>
         <source>Name…</source>
-        <translation type="unfinished"></translation>
+        <translation>Namn…</translation>
     </message>
     <message>
         <source>Map</source>
-        <translation type="unfinished"></translation>
+        <translation>Mapp</translation>
     </message>
 </context>
 <context>
@@ -695,7 +695,7 @@
     </message>
     <message>
         <source>Fileman root mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Filemans root-läge</translation>
     </message>
     <message>
         <source>Root mode</source>
@@ -769,11 +769,11 @@
     </message>
     <message>
         <source>SD-Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD-kort</translation>
     </message>
     <message>
         <source>Android location</source>
-        <translation type="unfinished"></translation>
+        <translation>Android-plats</translation>
     </message>
 </context>
 <context>
@@ -814,19 +814,19 @@
     <name>Welcome</name>
     <message>
         <source>Fileman is a File Manager for Sailfish OS.</source>
-        <translation type="unfinished">Fileman är en filhanterare för Sailfish OS.</translation>
+        <translation>Fileman är en filhanterare för Sailfish OS.</translation>
     </message>
     <message>
         <source>Fileman is free software released under the GNU General Public License (GPL), version 3 or later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fileman är fri mjukvara släppt under GNU General Public License (GPL), version 3 eller senare.</translation>
     </message>
     <message>
         <source>Welcome to Fileman.</source>
-        <translation type="unfinished"></translation>
+        <translation>Välkommen till Fileman.</translation>
     </message>
     <message>
         <source>If you want to support Fileman and its development please consider donating.</source>
-        <translation type="unfinished"></translation>
+        <translation>Om du vill stödja Fileman och dess utveckling, kanske du kan överväga att donera.</translation>
     </message>
 </context>
 <context>
