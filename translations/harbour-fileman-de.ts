@@ -483,7 +483,7 @@
     </message>
     <message>
         <source>Nothing was done</source>
-        <translation>Es wurde nichts getan</translation>
+        <translation>Es wurde nichts ausgeführt</translation>
     </message>
     <message>
         <source>Installation failed</source>
@@ -521,38 +521,38 @@
     <name>FileRoot</name>
     <message>
         <source>Root mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Administrator-Modus</translation>
     </message>
     <message>
         <source>Root</source>
-        <translation type="unfinished">Root</translation>
+        <translation>Wurzelverzeichniss</translation>
     </message>
     <message>
         <source>Start into user mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Starte im Benutzer-Modus</translation>
     </message>
     <message>
         <source>Start into root mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Starte im Administartor-Modus</translation>
     </message>
 </context>
 <context>
     <name>NewFilesDialog</name>
     <message>
         <source>Type</source>
-        <translation type="unfinished">Typ</translation>
+        <translation>Typ</translation>
     </message>
     <message>
         <source>File</source>
-        <translation type="unfinished"></translation>
+        <translation>Datei</translation>
     </message>
     <message>
         <source>Name…</source>
-        <translation type="unfinished"></translation>
+        <translation>Name...</translation>
     </message>
     <message>
         <source>Map</source>
-        <translation type="unfinished"></translation>
+        <translation>Karte</translation>
     </message>
 </context>
 <context>
@@ -666,7 +666,7 @@
     </message>
     <message>
         <source>Cache thumbnails</source>
-        <translation>Thumbnails cachen</translation>
+        <translation>Bildvorschau zwischenspeichern</translation>
     </message>
     <message>
         <source>Fileman translations</source>
@@ -691,15 +691,15 @@
     <message>
         <source></source>
         <comment>Activate root mode</comment>
-        <translation></translation>
+        <translation>Aktiviere Administrator-Modus</translation>
     </message>
     <message>
         <source>Fileman root mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Fileman Administrator-Modus</translation>
     </message>
     <message>
         <source>Root mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Adnministrator-Modus</translation>
     </message>
 </context>
 <context>
@@ -769,11 +769,11 @@
     </message>
     <message>
         <source>SD-Card</source>
-        <translation type="unfinished"></translation>
+        <translation>SD-Karte</translation>
     </message>
     <message>
         <source>Android location</source>
-        <translation type="unfinished"></translation>
+        <translation>Android-Speicherplatz</translation>
     </message>
 </context>
 <context>
@@ -806,27 +806,27 @@
         <translation>Fileman Übersetzer</translation>
     </message>
     <message>
-        <source>GitHub translations</source>
-        <translation>Übersetzungen auf GitHub</translation>
+        <source>POEditor translations</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Welcome</name>
     <message>
         <source>Fileman is a File Manager for Sailfish OS.</source>
-        <translation type="unfinished">Fileman ist ein Datei-Manager für Sailfish OS.</translation>
+        <translation>Fileman ist ein Datei-Manager für Sailfish OS.</translation>
     </message>
     <message>
         <source>Fileman is free software released under the GNU General Public License (GPL), version 3 or later.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fileman ist freie Software die unter der GNU-Lizenz (GPL, Version 3 oder später) veröffentlicht wurde.</translation>
     </message>
     <message>
         <source>Welcome to Fileman.</source>
-        <translation type="unfinished"></translation>
+        <translation>Willkommen bei Fileman.</translation>
     </message>
     <message>
         <source>If you want to support Fileman and its development please consider donating.</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn Du die Fileman-Entwicklung unterstützen möchtest, sind Spenden sehr willkommen.</translation>
     </message>
 </context>
 <context>

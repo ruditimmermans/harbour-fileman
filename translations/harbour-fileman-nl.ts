@@ -806,8 +806,8 @@
         <translation>Fileman vertalers</translation>
     </message>
     <message>
-        <source>GitHub translations</source>
-        <translation>GitHub vertalingen</translation>
+        <source>POEditor translations</source>
+        <translation>POEditor vertalingen</translation>
     </message>
 </context>
 <context>

@@ -806,8 +806,8 @@
         <translation>Traducteurs Fileman</translation>
     </message>
     <message>
-        <source>GitHub translations</source>
-        <translation>Traductions GitHub</translation>
+        <source>POEditor translations</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

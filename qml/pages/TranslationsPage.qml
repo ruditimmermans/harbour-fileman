@@ -18,8 +18,8 @@ Page
         {
             MenuItem
             {
-                text: qsTr("GitHub translations")
-                onClicked: Qt.openUrlExternally("https://github.com/ruditimmermans/harbour-fileman/tree/main/translations")
+                text: qsTr("POEditor translations")
+                onClicked: Qt.openUrlExternally("https://poeditor.com/join/project/XU2M88fE3o")
             }
         }
 
@@ -49,7 +49,7 @@ Page
             }
             CollaboratorsLabel {
                 title: "German"
-                labelData: [ "Inta" ]
+                labelData: [ "Fingus" ]
             }
             CollaboratorsLabel {
                 title: "Swedish"
