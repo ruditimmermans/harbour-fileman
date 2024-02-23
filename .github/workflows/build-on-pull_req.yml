@@ -2,8 +2,10 @@ name: Github CI build
 
 on:
   push:
+    tags:
+      - '*'
   pull_request:
-    branches:  
+    branches:
       - master
 env:
   RELEASE: 4.5.0.16
