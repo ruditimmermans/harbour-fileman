@@ -699,7 +699,7 @@
     </message>
     <message>
         <source>Root mode</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Root-läge</translation>
     </message>
 </context>
 <context>
