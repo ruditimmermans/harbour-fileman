@@ -18,7 +18,7 @@ Page
         {
             MenuItem
             {
-                text: qsTr("ransifex translations")
+                text: qsTr("Transifex translations")
                 onClicked: Qt.openUrlExternally("https://app.transifex.com/ruditimmermans/sailfish-fileman")
             }
         }
