@@ -829,7 +829,7 @@
         <translation>Traductores de Fileman</translation>
     </message>
     <message>
-        <source>Transifex translations</source>
+        <source>POEditor translations</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

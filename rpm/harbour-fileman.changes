@@ -8,7 +8,13 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
-* Thu Fry 23 2024 Rudi Timmermans <rudi.timmermans@mailfence.com> 1.3-rc1
+* Sun Feb 25 2024 Rudi Timmermans <rudi.timmermans@mailfence.com> 1.4-0
+- [MINOR CHANGES] Move from pulldownmenu to the settings menu
+- [MINOR CHANGES] General fixed and inprovements
+- [CLEAN] Clean out not translated languages
+- [UPDATE] Updated transladed languages
+
+* Fri Feb 23 2024 Rudi Timmermans <rudi.timmermans@mailfence.com> 1.3-rc1
 - [MINOR BUGFIX] Into settings page
 - [UPDATE] Change the coverpage to app mode when minimize
 - [UPDATE] Updated Swedish translation

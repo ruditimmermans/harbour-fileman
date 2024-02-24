@@ -13,8 +13,8 @@ Name:       harbour-fileman
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    harbour-fileman
-Version:    1.3
-Release:    rc3
+Version:    1.4
+Release:    0
 Group:      Qt/Qt
 License:    GPLv3
 URL:        https://bitbucket.org/ruditimmermans/harbour-fileman/src
@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(sailfishapp) >= 0.0.10
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
 
 %description
@@ -62,9 +63,8 @@ desktop-file-install --delete-original       \
    %{buildroot}%{_datadir}/applications/*.desktop
 
 %files
-%defattr(4755,root,root,4755)
-%{_bindir}
 %defattr(-,root,root,-)
+%{_bindir}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png

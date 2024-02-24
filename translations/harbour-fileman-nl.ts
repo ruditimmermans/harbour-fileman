@@ -796,7 +796,7 @@
     </message>
     <message>
         <source>Android location</source>
-        <translation type="unfinished"></translation>
+        <translation>Android locaties</translation>
     </message>
 </context>
 <context>
@@ -829,8 +829,8 @@
         <translation>Fileman vertalers</translation>
     </message>
     <message>
-        <source>Transifex translations</source>
-        <translation type="unfinished"></translation>
+        <source>POEditor translations</source>
+        <translation>POEditor vertalingen</translation>
     </message>
 </context>
 <context>

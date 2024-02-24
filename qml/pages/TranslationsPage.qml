@@ -18,8 +18,8 @@ Page
         {
             MenuItem
             {
-                text: qsTr("Transifex translations")
-                onClicked: Qt.openUrlExternally("https://app.transifex.com/ruditimmermans/sailfish-fileman")
+                text: qsTr("POEditor translations")
+                onClicked: Qt.openUrlExternally("https://poeditor.com/join/project/NkPuDWFCn1")
             }
         }
 
