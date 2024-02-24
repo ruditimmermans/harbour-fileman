@@ -81,6 +81,7 @@ DISTFILES += \
     qml/pages/FileRenameDialog.qml \
     qml/pages/NewFilesDialog.qml \
     qml/pages/settings/FileDisplay.qml \
+    qml/pages/settings/DirectoryDisplay.qml \
     qml/pages/settings/FileRoot.qml \
     qml/Fileman.qml \
     qml/pages/DirectoryPage.qml \

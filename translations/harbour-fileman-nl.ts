@@ -65,6 +65,41 @@
     </message>
 </context>
 <context>
+    <name>DirectoryDisplay</name>
+    <message>
+        <source>Directory display</source>
+        <translation>Directoryweergave</translation>
+    </message>
+    <message>
+        <source>Directory display look</source>
+        <translation>Directoryweergave uiterlijk</translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation>Verborgen bestanden weergeven</translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation>Verborgen bestanden niet weergeven</translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
+        <translation>Verborgen bestanden en mappen weergeven</translation>
+    </message>
+    <message>
+        <source>Show path into the dir header</source>
+        <translation>Path in de mapkop weergeven</translation>
+    </message>
+    <message>
+        <source>Don&apos;t show path into the dir header</source>
+        <translation>Path in de mapkop niet weergeven</translation>
+    </message>
+    <message>
+        <source>Show the path in the dir header</source>
+        <translation>Toon het pad in de mapkop</translation>
+    </message>
+</context>
+<context>
     <name>DirectoryFileOperations</name>
     <message>
         <source>Rename</source>
@@ -135,22 +170,6 @@
     <message>
         <source>Settings</source>
         <translation>Instellingen</translation>
-    </message>
-    <message>
-        <source>Show page header</source>
-        <translation>Toon paginakop</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show page header</source>
-        <translation>Geen paginakop weergeven</translation>
-    </message>
-    <message>
-        <source>Show hidden files</source>
-        <translation>Toon verborgen bestanden</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
-        <translation>Laat geen verborgen bestanden zien</translation>
     </message>
     <message>
         <source>Places</source>
@@ -700,6 +719,10 @@
     <message>
         <source>Root mode</source>
         <translation>Root-modus</translation>
+    </message>
+    <message>
+        <source>Directory display</source>
+        <translation>Directoryweergave</translation>
     </message>
 </context>
 <context>

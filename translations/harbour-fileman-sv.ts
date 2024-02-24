@@ -65,6 +65,41 @@
     </message>
 </context>
 <context>
+    <name>DirectoryDisplay</name>
+    <message>
+        <source>Directory display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Directory display look</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation type="unfinished">Visa dolda filer</translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show path into the dir header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show path into the dir header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show the path in the dir header</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>DirectoryFileOperations</name>
     <message>
         <source>Rename</source>
@@ -135,22 +170,6 @@
     <message>
         <source>Settings</source>
         <translation>Inställningar</translation>
-    </message>
-    <message>
-        <source>Show page header</source>
-        <translation>Visa sidhuvud</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show page header</source>
-        <translation>Visa inte sidhuvud</translation>
-    </message>
-    <message>
-        <source>Show hidden files</source>
-        <translation>Visa dolda filer</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
-        <translation>Visa inte dolda filer</translation>
     </message>
     <message>
         <source>Places</source>
@@ -700,6 +719,10 @@
     <message>
         <source>Root mode</source>
         <translation type="unfinished">Root-läge</translation>
+    </message>
+    <message>
+        <source>Directory display</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

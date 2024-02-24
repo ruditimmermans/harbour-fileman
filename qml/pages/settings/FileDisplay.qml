@@ -37,27 +37,21 @@ Page {
 
                 value: settings.fileOverlayPeriod
                 valueText: value
-
                 onReleased: settings.fileOverlayPeriod = value
-
                 label: qsTr("Overlay visibility (seconds)")
             }
 
             TextSwitch {
                 text: qsTr("Browse through all files")
                 description: qsTr("When viewing a file, browse through all viewable files instead of files with the same file type")
-
                 checked: settings.browseAllFileTypes
-
                 onCheckedChanged: settings.browseAllFileTypes = checked
             }
 
             TextSwitch {
                 text: qsTr("Display black background")
                 description: qsTr("Display a black background when viewing image and video files")
-
                 checked: settings.showBlackBackground
-
                 onCheckedChanged: settings.showBlackBackground = checked
             }
         }

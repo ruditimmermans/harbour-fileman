@@ -36,9 +36,9 @@ Page {
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
-                icon: "image://theme/icon-m-file-image"
-                text: qsTr("Cache thumbnails")
-                onActionRequested: pageStack.push(Qt.resolvedUrl("settings/DirectoryViewSettings.qml"))
+                icon: "image://theme/icon-m-display"
+                text: qsTr("File display")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("settings/FileDisplay.qml"))
             }
 
             ClickableLabel
@@ -54,9 +54,19 @@ Page {
             {
                 width: parent.width
                 height: Theme.itemSizeSmall
-                icon: "image://theme/icon-m-display"
-                text: qsTr("File display")
-                onActionRequested: pageStack.push(Qt.resolvedUrl("settings/FileDisplay.qml"))
+                icon: "image://theme/icon-m-file-image"
+                text: qsTr("Cache thumbnails")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("settings/DirectoryViewSettings.qml"))
+            }
+
+
+            ClickableLabel
+            {
+                width: parent.width
+                height: Theme.itemSizeSmall
+                icon: "image://theme/icon-m-file-folder"
+                text: qsTr("Directory display")
+                onActionRequested: pageStack.push(Qt.resolvedUrl("settings/DirectoryDisplay.qml"))
             }
 
             SectionHeader { text: qsTr("Fileman information") }

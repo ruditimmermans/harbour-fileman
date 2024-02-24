@@ -274,7 +274,6 @@ void Settings::setShowHiddenFiles(const bool &showHiddenFiles)
         settings->setValue("showHiddenFiles", QVariant(showHiddenFiles));
         settings->sync();
         emit showHiddenFilesChanged(showHiddenFiles);
-        emit directoryViewSettingsChanged();
     }
 }
 
@@ -294,7 +293,6 @@ void Settings::setShowDirHeader(const bool &showDirHeader)
         settings->setValue("showDirHeader", QVariant(showDirHeader));
         settings->sync();
         emit showDirHeaderChanged(showDirHeader);
-        emit directoryViewSettingsChanged();
     }
 }
 

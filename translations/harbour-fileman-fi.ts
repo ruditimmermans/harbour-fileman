@@ -65,6 +65,41 @@
     </message>
 </context>
 <context>
+    <name>DirectoryDisplay</name>
+    <message>
+        <source>Directory display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Directory display look</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show path into the dir header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show path into the dir header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show the path in the dir header</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>DirectoryFileOperations</name>
     <message>
         <source>Rename</source>
@@ -134,22 +169,6 @@
     <name>DirectoryPullDownMenu</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Show page header</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Don&apos;t show page header</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Show hidden files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -699,6 +718,10 @@
     </message>
     <message>
         <source>Root mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Directory display</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

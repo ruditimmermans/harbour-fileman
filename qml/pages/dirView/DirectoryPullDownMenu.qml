@@ -14,46 +14,6 @@ PullDownMenu {
         onClicked: pageStack.push(Qt.resolvedUrl("../SearchPage.qml"))
     }
     MenuItem {
-        id: showHeader
-        text: qsTr("Show page header")
-        visible: false
-        onClicked: {
-            visible = false
-            hiddenShowHeader.visible = true
-            settings.showDirHeader = true
-        }
-    }
-    MenuItem {
-        id: hiddenShowHeader
-        text: qsTr("Don't show page header")
-        visible: false
-        onClicked: {
-            visible = false
-            showHeader.visible = true
-            settings.showDirHeader = false
-        }
-    }
-    MenuItem {
-        id: showHidden
-        text: qsTr("Show hidden files")
-        visible: false
-        onClicked: {
-            visible = false
-            dontHidden.visible = true
-            settings.showHiddenFiles = true
-        }
-    }
-    MenuItem {
-        id: dontHidden
-        text: qsTr("Don't show hidden files")
-        visible: false
-        onClicked: {
-            visible = false
-            showHidden.visible = true
-            settings.showHiddenFiles = false
-        }
-    }
-    MenuItem {
         text: qsTr("New folder")
         visible: 'isShortcutsPage' in getDirectoryView() ? false : true
         onClicked: getDirectoryPage().addNewFiles()
