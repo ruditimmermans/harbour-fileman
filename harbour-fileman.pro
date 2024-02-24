@@ -120,14 +120,8 @@ CONFIG += sailfishapp_i18n
 TRANSLATIONS += \
     translations/harbour-fileman-de.ts \
     translations/harbour-fileman-es.ts \
-    translations/harbour-fileman-it.ts \
     translations/harbour-fileman-nl.ts \
-    translations/harbour-fileman-fr.ts \
-    translations/harbour-fileman-sv.ts \
-    translations/harbour-fileman-pl.ts \
-    translations/harbour-fileman-zh_CN.ts \
-    translations/harbour-fileman-pt_BR.ts \
-    translations/harbour-fileman-fi.ts
+    translations/harbour-fileman-sv.ts
 
 RESOURCES += \
     resources.qrc

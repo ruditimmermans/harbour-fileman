@@ -829,8 +829,8 @@
         <translation>Fileman vertalers</translation>
     </message>
     <message>
-        <source>POEditor translations</source>
-        <translation>POEditor vertalingen</translation>
+        <source>ransifex translations</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

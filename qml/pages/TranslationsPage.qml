@@ -18,8 +18,8 @@ Page
         {
             MenuItem
             {
-                text: qsTr("POEditor translations")
-                onClicked: Qt.openUrlExternally("https://poeditor.com/join/project/XU2M88fE3o")
+                text: qsTr("ransifex translations")
+                onClicked: Qt.openUrlExternally("https://app.transifex.com/ruditimmermans/sailfish-fileman")
             }
         }
 
@@ -36,14 +36,6 @@ Page
             }
 
             CollaboratorsLabel {
-                title: "Portugees"
-                labelData: [ "Rafaelvlmendes" ]
-            }
-            CollaboratorsLabel {
-                title: "Chinese"
-                labelData: [ "Dashinfantry" ]
-            }
-            CollaboratorsLabel {
                 title: "Spanish"
                 labelData: [ "Carmenfdezb" ]
             }
@@ -54,18 +46,6 @@ Page
             CollaboratorsLabel {
                 title: "Swedish"
                 labelData: [ "Eson" ]
-            }
-            CollaboratorsLabel {
-                title: "Polish"
-                labelData: [ "Atlochowski" ]
-            }
-            CollaboratorsLabel {
-                title: "Italian"
-                labelData: [ "Fravaccaro" ]
-            }
-            CollaboratorsLabel {
-                title: "Portuguese (Brazil)"
-                labelData: [ "Marreko" ]
             }
         }
     }
