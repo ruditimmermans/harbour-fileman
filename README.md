@@ -8,7 +8,7 @@
   <br>
 </h1>
 
-Fileman a tool to view files on Sailfish OS.
+Fileman a feature filled file manager application for SailfishOS.
 
 ## Features
 - Preview JPEG, PNG and GIF files

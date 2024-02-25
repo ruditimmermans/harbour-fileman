@@ -13,11 +13,11 @@ Name:       harbour-fileman
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    harbour-fileman
-Version:    1.4
-Release:    0
+Version:    1.3
+Release:    rc3
 Group:      Qt/Qt
 License:    GPLv3
-URL:        https://bitbucket.org/ruditimmermans/harbour-fileman/src
+URL:        https://github.com/ruditimmermans/harbour-fileman
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-fileman.yaml
 Requires:   qt5-qtsvg-plugin-imageformat-svg >= 0-1.2.2

@@ -4,6 +4,8 @@ CONFIG += sailfishapp
 
 QT += multimedia
 
+DEFINES += VERSION=\\\"$${VERSION}\\\"
+
 SOURCES += \
     src/thumbnailprovider.cpp \
     src/settings.cpp \
