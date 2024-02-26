@@ -17,7 +17,7 @@ Version:    1.3
 Release:    rc4
 Group:      Qt/Qt
 License:    GPLv3
-URL:        https://bitbucket.org/ruditimmermans/harbour-fileman/src
+URL:        https://github.com/ruditimmermans/harbour-fileman
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-fileman.yaml
 Requires:   qt5-qtsvg-plugin-imageformat-svg >= 0-1.2.2
