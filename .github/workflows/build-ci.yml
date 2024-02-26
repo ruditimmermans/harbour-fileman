@@ -1,4 +1,4 @@
-name: Sailfish App Build
+name: Fileman App Build
 
 on:
   pull_request:
