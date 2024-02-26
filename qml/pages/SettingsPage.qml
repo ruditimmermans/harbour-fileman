@@ -12,6 +12,8 @@ Page {
         anchors.fill: parent
         contentHeight: content.height
 
+        VerticalScrollDecorator { }
+
         Column
         {
             id: content
@@ -67,28 +69,6 @@ Page {
                 icon: "image://theme/icon-m-file-folder"
                 text: qsTr("Directory display")
                 onActionRequested: pageStack.push(Qt.resolvedUrl("settings/DirectoryDisplay.qml"))
-            }
-
-            SectionHeader { text: qsTr("Fileman information") }
-
-            ClickableLabel
-            {
-                width: parent.width
-                height: Theme.itemSizeSmall
-                icon: "image://theme/icon-m-about"
-                text: qsTr("About Fileman")
-                onActionRequested: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
-            }
-
-            SectionHeader { text: qsTr("Fileman translations") }
-
-            ClickableLabel
-            {
-                width: parent.width
-                height: Theme.itemSizeSmall
-                icon: "image://theme/icon-m-region"
-                text: qsTr("Translations")
-                onActionRequested: pageStack.push(Qt.resolvedUrl("TranslationsPage.qml"))
             }
           }
         }

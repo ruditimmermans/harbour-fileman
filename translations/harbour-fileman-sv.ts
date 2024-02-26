@@ -150,27 +150,23 @@
     <name>DirectoryPage</name>
     <message>
         <source>Deleting </source>
-        <translation>Tar bort </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copying </source>
-        <translation>Kopierar </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> entry</source>
-        <translation> post</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> entries</source>
-        <translation> poster</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DirectoryPullDownMenu</name>
-    <message>
-        <source>Settings</source>
-        <translation>Inställningar</translation>
-    </message>
     <message>
         <source>Places</source>
         <translation>Platser</translation>
@@ -680,16 +676,8 @@
         <translation>Filvisning</translation>
     </message>
     <message>
-        <source>Translations</source>
-        <translation>Översättningar</translation>
-    </message>
-    <message>
         <source>Cache thumbnails</source>
         <translation>Cachelagra miniatyrer</translation>
-    </message>
-    <message>
-        <source>Fileman translations</source>
-        <translation>Fileman-översättningar</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -698,14 +686,6 @@
     <message>
         <source>Fileman settings</source>
         <translation>Fileman-inställningar</translation>
-    </message>
-    <message>
-        <source>Fileman information</source>
-        <translation>Fileman-information</translation>
-    </message>
-    <message>
-        <source>About Fileman</source>
-        <translation>Om Fileman</translation>
     </message>
     <message>
         <source>Fileman root mode</source>
@@ -729,6 +709,21 @@
     <message>
         <source>Note: You can only share one file at a time. Not multiple ones.</source>
         <translation>Notera att du bara kan dela en fil åt gången. Inte flera samtidigt.</translation>
+    </message>
+</context>
+<context>
+    <name>ShortcutsPullDownMenu</name>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Inställningar</translation>
+    </message>
+    <message>
+        <source>About Fileman</source>
+        <translation type="unfinished">Om Fileman</translation>
+    </message>
+    <message>
+        <source>Fileman translations</source>
+        <translation type="unfinished">Fileman-översättningar</translation>
     </message>
 </context>
 <context>

@@ -168,10 +168,6 @@
 <context>
     <name>DirectoryPullDownMenu</name>
     <message>
-        <source>Settings</source>
-        <translation type="unfinished">Ajustes</translation>
-    </message>
-    <message>
         <source>Places</source>
         <translation type="unfinished">Lugares</translation>
     </message>
@@ -680,15 +676,7 @@
         <translation>Visualización de archivos</translation>
     </message>
     <message>
-        <source>Translations</source>
-        <translation>Traducciones</translation>
-    </message>
-    <message>
         <source>Cache thumbnails</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Fileman translations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -698,14 +686,6 @@
     <message>
         <source>Fileman settings</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Fileman information</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About Fileman</source>
-        <translation type="unfinished">Acerca de Fileman</translation>
     </message>
     <message>
         <source></source>
@@ -734,6 +714,21 @@
     <message>
         <source>Note: You can only share one file at a time. Not multiple ones.</source>
         <translation>Nota: sólo puedes compartir un archivo a la vez. No varios a la vez.</translation>
+    </message>
+</context>
+<context>
+    <name>ShortcutsPullDownMenu</name>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Ajustes</translation>
+    </message>
+    <message>
+        <source>About Fileman</source>
+        <translation type="unfinished">Acerca de Fileman</translation>
+    </message>
+    <message>
+        <source>Fileman translations</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

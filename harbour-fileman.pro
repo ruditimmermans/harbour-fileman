@@ -43,6 +43,7 @@ DISTFILES += \
     qml/pages/ImageView.qml \
     qml/js/directoryViewModel.js \
     qml/pages/dirView/DirectoryPullDownMenu.qml \
+    qml/pages/dirView/ShortcutsPullDownMenu.qml \
     qml/pages/dirView/DirectoryPushUpMenu.qml \
     qml/pages/settings/DirectoryViewSettings.qml \
     qml/pages/dirView/DirectoryListView.qml \

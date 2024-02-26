@@ -150,27 +150,23 @@
     <name>DirectoryPage</name>
     <message>
         <source>Deleting </source>
-        <translation>Lösche </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copying </source>
-        <translation>Kopiere </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> entry</source>
-        <translation> Eintrag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> entries</source>
-        <translation> Einträge</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DirectoryPullDownMenu</name>
-    <message>
-        <source>Settings</source>
-        <translation type="unfinished">Einstellungen</translation>
-    </message>
     <message>
         <source>Places</source>
         <translation type="unfinished">Orte</translation>
@@ -680,16 +676,8 @@
         <translation>Dateianzeige</translation>
     </message>
     <message>
-        <source>Translations</source>
-        <translation>Übersetzungen</translation>
-    </message>
-    <message>
         <source>Cache thumbnails</source>
         <translation>Bildvorschau zwischenspeichern</translation>
-    </message>
-    <message>
-        <source>Fileman translations</source>
-        <translation>Fileman-Übersetzungen</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -698,14 +686,6 @@
     <message>
         <source>Fileman settings</source>
         <translation>Fileman-Einstellungen</translation>
-    </message>
-    <message>
-        <source>Fileman information</source>
-        <translation>Fileman-Informationen</translation>
-    </message>
-    <message>
-        <source>About Fileman</source>
-        <translation>Über Fileman</translation>
     </message>
     <message>
         <source>Fileman root mode</source>
@@ -729,6 +709,21 @@
     <message>
         <source>Note: You can only share one file at a time. Not multiple ones.</source>
         <translation>Hinweis: Du kannst nur eine Datei auf einmal freigeben, nicht mehrere.</translation>
+    </message>
+</context>
+<context>
+    <name>ShortcutsPullDownMenu</name>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished">Einstellungen</translation>
+    </message>
+    <message>
+        <source>About Fileman</source>
+        <translation type="unfinished">Über Fileman</translation>
+    </message>
+    <message>
+        <source>Fileman translations</source>
+        <translation type="unfinished">Fileman-Übersetzungen</translation>
     </message>
 </context>
 <context>

@@ -15,7 +15,7 @@ SilicaListView {
 
     VerticalScrollDecorator { }
 
-    DirectoryPullDownMenu { }
+    ShortcutsPullDownMenu { }
 
     model: listModel
 

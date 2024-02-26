@@ -150,27 +150,23 @@
     <name>DirectoryPage</name>
     <message>
         <source>Deleting </source>
-        <translation>Verwijderen </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copying </source>
-        <translation>Kopiëren </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> entry</source>
-        <translation> bestand</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source> entries</source>
-        <translation> bestanden</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DirectoryPullDownMenu</name>
-    <message>
-        <source>Settings</source>
-        <translation>Instellingen</translation>
-    </message>
     <message>
         <source>Places</source>
         <translation>FoldersPaneel</translation>
@@ -680,16 +676,8 @@
         <translation>Bestandsweergave</translation>
     </message>
     <message>
-        <source>Translations</source>
-        <translation>Vertalingen</translation>
-    </message>
-    <message>
         <source>Cache thumbnails</source>
         <translation>Cache miniaturen</translation>
-    </message>
-    <message>
-        <source>Fileman translations</source>
-        <translation>Fileman vertalingen</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -700,17 +688,9 @@
         <translation>Fileman instellingen</translation>
     </message>
     <message>
-        <source>Fileman information</source>
-        <translation>Fileman informatie</translation>
-    </message>
-    <message>
-        <source>About Fileman</source>
-        <translation>Over Fileman</translation>
-    </message>
-    <message>
         <source></source>
         <comment>Activate root mode</comment>
-        <translation></translation>
+        <translation>Activeer de root-modus</translation>
     </message>
     <message>
         <source>Fileman root mode</source>
@@ -734,6 +714,21 @@
     <message>
         <source>Note: You can only share one file at a time. Not multiple ones.</source>
         <translation>Opmerking: u kunt slechts één bestand per keer delen. Niet meerdere.</translation>
+    </message>
+</context>
+<context>
+    <name>ShortcutsPullDownMenu</name>
+    <message>
+        <source>Settings</source>
+        <translation>Instellingen</translation>
+    </message>
+    <message>
+        <source>About Fileman</source>
+        <translation>Over Fileman</translation>
+    </message>
+    <message>
+        <source>Fileman translations</source>
+        <translation>Fileman vertalingen</translation>
     </message>
 </context>
 <context>
