@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Mon Feb 26 2024 Rudi Timmermans <rudi.timmermans@mailfence.com> 1.3-rc4
+- [BUG FIX] Fix root mode
+
 * Sun Feb 25 2024 Rudi Timmermans <rudi.timmermans@mailfence.com> 1.3-rc3
 - [MINOR CHANGES] Move from pulldownmenu to the settings menu
 - [MINOR CHANGES] General fixed and inprovements
