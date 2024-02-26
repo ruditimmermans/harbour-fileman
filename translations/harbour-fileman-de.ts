@@ -825,7 +825,7 @@
     </message>
     <message>
         <source>POEditor translations</source>
-        <translation type="unfinished"></translation>
+        <translation>POEditor översättningar</translation>
     </message>
 </context>
 <context>

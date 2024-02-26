@@ -830,7 +830,7 @@
     </message>
     <message>
         <source>POEditor translations</source>
-        <translation type="unfinished"></translation>
+        <translation>POEditor vertalingen</translation>
     </message>
 </context>
 <context>
