@@ -17,7 +17,7 @@ Version:    1.3
 Release:    rc3
 Group:      Qt/Qt
 License:    GPLv3
-URL:        https://github.com/ruditimmermans/harbour-fileman
+URL:        https://bitbucket.org/ruditimmermans/harbour-fileman/src
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-fileman.yaml
 Requires:   qt5-qtsvg-plugin-imageformat-svg >= 0-1.2.2
@@ -26,7 +26,6 @@ BuildRequires:  pkgconfig(sailfishapp) >= 0.0.10
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
-BuildRequires:  qt5-qttools-linguist
 BuildRequires:  desktop-file-utils
 
 %description
@@ -63,8 +62,9 @@ desktop-file-install --delete-original       \
    %{buildroot}%{_datadir}/applications/*.desktop
 
 %files
-%defattr(-,root,root,-)
+%defattr(4755,root,root,4755)
 %{_bindir}
+%defattr(-,root,root,-)
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png

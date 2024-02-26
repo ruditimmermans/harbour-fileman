@@ -13,7 +13,7 @@ Settings::Settings(QObject *parent) :
     if (settings->contains("dirPath"))
         m_dirPath = settings->value("dirPath").toString();
     else
-        m_dirPath = "/home/nemo"; // Default path
+        m_dirPath = "/home/defaultuser"; // Default path
 
     if (settings->contains("defaultViewMode"))
         m_defaultViewMode = settings->value("defaultViewMode").toString();
@@ -33,7 +33,7 @@ Settings::Settings(QObject *parent) :
     if (settings->contains("showDirHeader"))
         m_showDirHeader = settings->value("showDirHeader").toBool();
     else
-        m_showDirHeader = false;
+        m_showDirHeader = true;
 
     if (settings->contains("galleryMode"))
         m_galleryMode = settings->value("galleryMode").toBool();

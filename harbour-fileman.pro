@@ -1,10 +1,18 @@
 TARGET = harbour-fileman
 
+i18n.path = /usr/share/harbour-fileman/translations
+i18n.files = translations/harbour-fileman-de.qm \
+             translations/harbour-fileman-es.qm \
+             translations/harbour-fileman-nl.qm \
+             translations/harbour-fileman-sv.qm
+
+INSTALLS += i18n
+
+system(lrelease $$PWD/translations/*.ts)
+
 CONFIG += sailfishapp
 
 QT += multimedia
-
-DEFINES += VERSION=\\\"$${VERSION}\\\"
 
 SOURCES += \
     src/thumbnailprovider.cpp \
@@ -66,8 +74,8 @@ DISTFILES += \
     qml/pages/FileRenameDialog.qml \
     qml/pages/NewFilesDialog.qml \
     qml/pages/settings/FileDisplay.qml \
-    qml/pages/settings/DirectoryDisplay.qml \
     qml/pages/settings/FileRoot.qml \
+    qml/pages/settings/DirectoryDisplay.qml \
     qml/Fileman.qml \
     qml/pages/DirectoryPage.qml \
     qml/pages/BackPage.qml \
@@ -107,6 +115,7 @@ TRANSLATIONS += \
     translations/harbour-fileman-es.ts \
     translations/harbour-fileman-nl.ts \
     translations/harbour-fileman-sv.ts
+
 
 RESOURCES += \
     resources.qrc
