@@ -57,6 +57,15 @@ Page {
                 }
             }
 
+            SectionHeader { text: qsTr("Translators") }
+
+            IconTextButton {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: qsTr("Fileman Translations")
+                iconSource: "qrc:/images/trans"
+                onClicked: pageStack.push(Qt.resolvedUrl("TranslationsPage.qml"))
+            }
+
             SectionHeader { text: qsTr("Icons") }
             TextLabel { labelText: qsTr("Fileman icons made by Gregguh.") }
 

@@ -71,6 +71,14 @@
         <source>Bèta testing</source>
         <translation>Bèta testen</translation>
     </message>
+    <message>
+        <source>Translators</source>
+        <translation>Vertalers</translation>
+    </message>
+    <message>
+        <source>Fileman Translations</source>
+        <translation>Fileman vertalingen</translation>
+    </message>
 </context>
 <context>
     <name>DirectoryDisplay</name>
@@ -733,10 +741,6 @@
     <message>
         <source>About Fileman</source>
         <translation>Over Fileman</translation>
-    </message>
-    <message>
-        <source>Fileman translations</source>
-        <translation>Fileman vertalingen</translation>
     </message>
 </context>
 <context>

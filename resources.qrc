@@ -3,6 +3,7 @@
         <file alias="developer">data/images/icon-developer.png</file>
         <file alias="paypal">data/images/icon-paypal.png</file>
         <file alias="twitter">data/images/icon-twitter.png</file>
+        <file alias="trans">data/images/icon-trans.png</file>
     </qresource>
     <qresource prefix="/icons">
         <file alias="audio">data/icons/audio-x-generic.svg</file>

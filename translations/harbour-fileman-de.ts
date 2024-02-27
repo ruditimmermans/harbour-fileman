@@ -71,6 +71,14 @@
         <source>Bèta testing</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Translators</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Fileman Translations</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DirectoryDisplay</name>
@@ -728,10 +736,6 @@
     <message>
         <source>About Fileman</source>
         <translation type="unfinished">Über Fileman</translation>
-    </message>
-    <message>
-        <source>Fileman translations</source>
-        <translation type="unfinished">Fileman-Übersetzungen</translation>
     </message>
 </context>
 <context>
