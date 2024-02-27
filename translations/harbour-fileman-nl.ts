@@ -63,6 +63,14 @@
         <source>Report an Issue</source>
         <translation>Een probleem melden</translation>
     </message>
+    <message>
+        <source>Thanks to Eson for the beta testing.</source>
+        <translation>Met dank aan Eson voor het bèta testen.</translation>
+    </message>
+    <message>
+        <source>Bèta testing</source>
+        <translation>Bèta testen</translation>
+    </message>
 </context>
 <context>
     <name>DirectoryDisplay</name>

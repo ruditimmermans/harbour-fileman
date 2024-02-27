@@ -63,6 +63,9 @@ Page {
             SectionHeader { text: qsTr("Thanking") }
             TextLabel { labelText: qsTr("Thanks to Velox for the help on the Search function.") }
 
+            SectionHeader { text: qsTr("Bèta testing") }
+            TextLabel { labelText: qsTr("Thanks to Eson for the beta testing.") }
+
             SectionHeader { text: qsTr("Version") }
             TextLabel { labelText: mainWindow.appName + " v" + mainWindow.version }
 

@@ -63,6 +63,14 @@
         <source>Report an Issue</source>
         <translation>Fehler melden</translation>
     </message>
+    <message>
+        <source>Thanks to Eson for the beta testing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bèta testing</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DirectoryDisplay</name>
