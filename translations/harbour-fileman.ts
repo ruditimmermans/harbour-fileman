@@ -68,15 +68,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Bèta testing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Translators</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fileman Translations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bèta tester</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

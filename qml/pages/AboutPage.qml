@@ -72,7 +72,7 @@ Page {
             SectionHeader { text: qsTr("Thanking") }
             TextLabel { labelText: qsTr("Thanks to Velox for the help on the Search function.") }
 
-            SectionHeader { text: qsTr("Bèta testing") }
+            SectionHeader { text: qsTr("Bèta tester") }
             TextLabel { labelText: qsTr("Thanks to Eson for the beta testing.") }
 
             SectionHeader { text: qsTr("Version") }

@@ -68,16 +68,16 @@
         <translation>Tack till eson för betatestning</translation>
     </message>
     <message>
-        <source>Bèta testing</source>
-        <translation>Betatestning</translation>
-    </message>
-    <message>
         <source>Translators</source>
         <translation>översättare</translation>
     </message>
     <message>
         <source>Fileman Translations</source>
         <translation>Fileman-översättningar</translation>
+    </message>
+    <message>
+        <source>Bèta tester</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

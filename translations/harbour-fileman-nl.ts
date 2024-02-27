@@ -68,16 +68,16 @@
         <translation>Met dank aan Eson voor het bèta testen.</translation>
     </message>
     <message>
-        <source>Bèta testing</source>
-        <translation>Bèta testen</translation>
-    </message>
-    <message>
         <source>Translators</source>
         <translation>Vertalers</translation>
     </message>
     <message>
         <source>Fileman Translations</source>
         <translation>Fileman vertalingen</translation>
+    </message>
+    <message>
+        <source>Bèta tester</source>
+        <translation>Bèta tester</translation>
     </message>
 </context>
 <context>
