@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es">
+<TS version="2.1" language="es_GT">
 <context>
     <name>AboutPage</name>
     <message>
         <source>What&apos;s</source>
-        <translation>¿Qué es</translation>
+        <translation>¿Qué es?</translation>
     </message>
     <message>
         <source>Licensing</source>
@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>is free software released under the GNU General Public License (GPL), version 3 or later.</source>
-        <translation>es un programa libre publicado bajo la Licencia Pública General de GNU (GPL), versión 3 o posterior.</translation>
+        <translation>es libre software publicado con Licencia GNU GPL v3 o posterior.</translation>
     </message>
     <message>
         <source>Rudi Timmermans</source>
@@ -29,15 +29,15 @@
     </message>
     <message>
         <source>Fileman is a File Manager for Sailfish OS.</source>
-        <translation>Fileman es un explorador de archivos para Sailfish OS.</translation>
+        <translation>Fileman es un Archivador para Sailfish SO.</translation>
     </message>
     <message>
         <source>Fileman developer</source>
-        <translation>Desarrollador de Fileman</translation>
+        <translation>Programador de Fileman</translation>
     </message>
     <message>
         <source>About Fileman</source>
-        <translation>Acerca de Fileman</translation>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <source>Icons</source>
@@ -45,23 +45,23 @@
     </message>
     <message>
         <source>Fileman icons made by Gregguh.</source>
-        <translation type="unfinished"></translation>
+        <translation>Iconos de Fileman hechos por Gregguh.</translation>
     </message>
     <message>
         <source>Thanking</source>
-        <translation type="unfinished"></translation>
+        <translation>Agradecimientos</translation>
     </message>
     <message>
         <source>Thanks to Velox for the help on the Search function.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gracias a Velox por ayuda con función de búsqueda.</translation>
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation type="unfinished"></translation>
+        <translation>Repositorio GitHub</translation>
     </message>
     <message>
         <source>Report an Issue</source>
-        <translation type="unfinished"></translation>
+        <translation>Reportar un problema</translation>
     </message>
     <message>
         <source>Thanks to Eson for the beta testing.</source>
@@ -69,42 +69,42 @@
     </message>
     <message>
         <source>Translators</source>
-        <translation type="unfinished"></translation>
+        <translation>Traductores</translation>
     </message>
     <message>
         <source>Fileman Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducciones de Fileman</translation>
     </message>
     <message>
         <source>Bèta tester</source>
-        <translation type="unfinished"></translation>
+        <translation>Probador Beta</translation>
     </message>
 </context>
 <context>
     <name>DirectoryDisplay</name>
     <message>
         <source>Directory display</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualización del directorio</translation>
     </message>
     <message>
         <source>Directory display look</source>
-        <translation type="unfinished"></translation>
+        <translation>Aspecto de visualización del Directorio</translation>
     </message>
     <message>
         <source>Show hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar archivos ocultos</translation>
     </message>
     <message>
         <source>Don&apos;t show hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>No mostrar archivos ocultos</translation>
     </message>
     <message>
         <source>View hidden files and folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Ver Archivos y Carpetas ocultas</translation>
     </message>
     <message>
         <source>Show path into the dir header</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar ruta al encabezado del directorio</translation>
     </message>
     <message>
         <source>Don&apos;t show path into the dir header</source>
@@ -112,7 +112,7 @@
     </message>
     <message>
         <source>Show the path in the dir header</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar ruta en encabezado del directorio.</translation>
     </message>
 </context>
 <context>
@@ -147,87 +147,87 @@
     </message>
     <message>
         <source>1 entry selected</source>
-        <translation type="unfinished"></translation>
+        <translation>1 entrada seleccionada</translation>
     </message>
     <message>
         <source> entries selected</source>
-        <translation type="unfinished"></translation>
+        <translation> entradas seleccionada</translation>
     </message>
     <message>
         <source>1 entry in clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>1 entrada en Portapapel</translation>
     </message>
     <message>
         <source> entries in clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation> entradas en Portapapeles</translation>
     </message>
 </context>
 <context>
     <name>DirectoryPage</name>
     <message>
         <source>Deleting </source>
-        <translation type="unfinished"></translation>
+        <translation>Borrando</translation>
     </message>
     <message>
         <source>Copying </source>
-        <translation type="unfinished"></translation>
+        <translation>Copiando</translation>
     </message>
     <message>
         <source> entry</source>
-        <translation type="unfinished"></translation>
+        <translation> entrada</translation>
     </message>
     <message>
         <source> entries</source>
-        <translation type="unfinished"></translation>
+        <translation> entradas</translation>
     </message>
 </context>
 <context>
     <name>DirectoryPullDownMenu</name>
     <message>
         <source>Places</source>
-        <translation type="unfinished">Lugares</translation>
+        <translation>Lugares</translation>
     </message>
     <message>
         <source>Search in directory</source>
-        <translation type="unfinished"></translation>
+        <translation>Buscar en Directorio</translation>
     </message>
     <message>
         <source>New folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuevo Folder</translation>
     </message>
     <message>
         <source>Global search</source>
-        <translation type="unfinished"></translation>
+        <translation>Búsqueda Global</translation>
     </message>
 </context>
 <context>
     <name>DirectoryPushUpMenu</name>
     <message>
         <source>Add to bookmarks</source>
-        <translation>Añadir a favoritos</translation>
+        <translation>Agregar a Favoritos</translation>
     </message>
     <message>
         <source>Remove from bookmarks</source>
-        <translation>Eliminar de favoritos</translation>
+        <translation>Borrar de Favoritos</translation>
     </message>
     <message>
         <source>Directory properties</source>
-        <translation>Propiedades del directorio</translation>
+        <translation>Propiedades del Directorio</translation>
     </message>
 </context>
 <context>
     <name>DirectoryViewSettings</name>
     <message>
         <source>Thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniaturas</translation>
     </message>
     <message>
         <source>Cache thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation>Miniaturas de caché</translation>
     </message>
     <message>
         <source>Save generated thumbnails for faster loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Guardar Miniaturas generadas para una carga más rápida</translation>
     </message>
 </context>
 <context>
@@ -238,98 +238,98 @@
     </message>
     <message>
         <source>File display look</source>
-        <translation>Apariencia en visualización de archivos</translation>
+        <translation>Apariencia de visualización de archivos</translation>
     </message>
     <message>
         <source>Browse through all files</source>
-        <translation>Explorar todos los archivos</translation>
+        <translation>Navegar todos los Archivos</translation>
     </message>
     <message>
         <source>When viewing a file, browse through all viewable files instead of files with the same file type</source>
-        <translation>Al visualizar un archivo, explorar todos los archivos visibles en lugar de los archivos del mismo tipo</translation>
+        <translation>Al visualizar un Archivo, navega todos archivos visibles en lugar de archivos del mismo tipo</translation>
     </message>
     <message>
         <source>Display black background</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar fondo Negro</translation>
     </message>
     <message>
         <source>Display a black background when viewing image and video files</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar fondo Negro al visualizar Archivos de Imágenes y Videos</translation>
     </message>
     <message>
         <source>Overlay visibility (seconds)</source>
-        <translation type="unfinished"></translation>
+        <translation>Visibilidad de Superposición (segundos)</translation>
     </message>
 </context>
 <context>
     <name>FileInfo</name>
     <message>
         <source>File information</source>
-        <translation>Información de archivo</translation>
+        <translation>Información de Archivo</translation>
     </message>
     <message>
         <source>Show as text</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostar como  Texto</translation>
     </message>
     <message>
         <source>Edit as text</source>
-        <translation type="unfinished"></translation>
+        <translation>Editar como Texto</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Execute</source>
-        <translation type="unfinished">Ejecución</translation>
+        <translation>Ejecutar</translation>
     </message>
     <message>
         <source>MPG video</source>
-        <translation type="unfinished"></translation>
+        <translation>Video MPG</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation type="unfinished"></translation>
+        <translation>Ancho</translation>
     </message>
     <message>
         <source>Height</source>
-        <translation type="unfinished"></translation>
+        <translation>Altura</translation>
     </message>
     <message>
         <source>Image details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detalles de imagen</translation>
     </message>
     <message>
         <source>Size</source>
-        <translation type="unfinished">Tamaño</translation>
+        <translation>Tamaño</translation>
     </message>
     <message>
         <source>Last modified</source>
-        <translation type="unfinished"></translation>
+        <translation>Última modificación</translation>
     </message>
     <message>
         <source>Created</source>
-        <translation type="unfinished"></translation>
+        <translation>Creado</translation>
     </message>
     <message>
         <source>File details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detalles de Archivo</translation>
     </message>
     <message>
         <source>Directory details</source>
-        <translation type="unfinished"></translation>
+        <translation>Detalles de Directorio</translation>
     </message>
     <message>
         <source>PNG image</source>
-        <translation type="unfinished"></translation>
+        <translation>Imagen PNG</translation>
     </message>
     <message>
         <source>JPEG image</source>
-        <translation type="unfinished"></translation>
+        <translation>Imagen JPEG</translation>
     </message>
     <message>
         <source>GIF image</source>
-        <translation type="unfinished"></translation>
+        <translation>Imagen GIF</translation>
     </message>
     <message>
         <source>SVG vector image</source>
