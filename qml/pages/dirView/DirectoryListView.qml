@@ -306,8 +306,6 @@ SilicaListView {
     {
         // Make sure the add/remove bookmark menu options are updated correctly
         pushUpMenu.updateBookmarkOptions()
-        pullDownMenu.updatesHiddenFilesOptions()
-        pullDownMenu.updatesHeaderOptions()
     }
 
     function removeSelections()

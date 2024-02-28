@@ -8,6 +8,9 @@
 # * date Author's Name <author's email> version-release
 # - Summary of changes
 
+* Wen Feb 28 2024 Rudi Timmermans <rudi.timmermans@mailfence.com> 1.5-0
+- [MINOR CHANGES] General fixed and inprovements
+
 * Thu Feb 27 2024 Rudi Timmermans <rudi.timmermans@mailfence.com> 1.4-0
 - [MINOR CHANGES] Remake the pulldown menu structure
 - [MINOR CHANGES] Moving translation page to about screen
