@@ -46,7 +46,7 @@ jobs:
         arch: armv7hl
 
     - name: Upload build results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: RPM-build-results_SFOS${{ env.RELEASE }}+
         path: RPMS/
