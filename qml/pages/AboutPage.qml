@@ -49,14 +49,6 @@ Page {
                 }
             }
 
-            IconTextButton {
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Donate with Paypal")
-                iconSource: "qrc:/images/paypal"
-                onClicked: { Qt.openUrlExternally("https://www.paypal.com/donate?hosted_button_id=K85Y233EKB5N4");
-                }
-            }
-
             SectionHeader { text: qsTr("Translators") }
 
             IconTextButton {
