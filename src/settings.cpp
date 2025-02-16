@@ -28,7 +28,7 @@ Settings::Settings(QObject *parent) :
     if (settings->contains("showHiddenFiles"))
         m_showHiddenFiles = settings->value("showHiddenFiles").toBool();
     else
-        m_showHiddenFiles = false;
+        m_showHiddenFiles = true;
 
     if (settings->contains("showDirHeader"))
         m_showDirHeader = settings->value("showDirHeader").toBool();
