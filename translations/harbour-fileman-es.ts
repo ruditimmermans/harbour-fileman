@@ -20,10 +20,6 @@
         <translation>Rudi Timmermans</translation>
     </message>
     <message>
-        <source>Donate with Paypal</source>
-        <translation>Donar con Paypal</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Versión</translation>
     </message>
@@ -91,18 +87,6 @@
         <translation>Aspecto de visualización del Directorio</translation>
     </message>
     <message>
-        <source>Show hidden files</source>
-        <translation>Mostrar archivos ocultos</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
-        <translation>No mostrar archivos ocultos</translation>
-    </message>
-    <message>
-        <source>View hidden files and folders</source>
-        <translation>Ver Archivos y Carpetas ocultas</translation>
-    </message>
-    <message>
         <source>Show path into the dir header</source>
         <translation>Mostrar ruta al encabezado del directorio</translation>
     </message>
@@ -113,6 +97,18 @@
     <message>
         <source>Show the path in the dir header</source>
         <translation>Mostrar ruta en encabezado del directorio.</translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -693,7 +689,7 @@
     </message>
     <message>
         <source>Cache thumbnails</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Miniaturas de caché</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -718,7 +714,7 @@
     </message>
     <message>
         <source>Directory display</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Visualización del directorio</translation>
     </message>
 </context>
 <context>
@@ -852,10 +848,6 @@
     </message>
     <message>
         <source>Welcome to Fileman.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>If you want to support Fileman and its development please consider donating.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

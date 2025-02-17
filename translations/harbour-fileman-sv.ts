@@ -20,10 +20,6 @@
         <translation>Rudi Timmermans</translation>
     </message>
     <message>
-        <source>Donate with Paypal</source>
-        <translation>Donera via Paypal</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Version</translation>
     </message>
@@ -91,18 +87,6 @@
         <translation>Mappvisningens utseende</translation>
     </message>
     <message>
-        <source>Show hidden files</source>
-        <translation>Visa dolda filer</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
-        <translation>Visa inte dolda filer</translation>
-    </message>
-    <message>
-        <source>View hidden files and folders</source>
-        <translation>Visa dolda filer och mappar</translation>
-    </message>
-    <message>
         <source>Show path into the dir header</source>
         <translation>Visa sökväg i mappens sidhuvud</translation>
     </message>
@@ -113,6 +97,18 @@
     <message>
         <source>Show the path in the dir header</source>
         <translation>Visa sökvägen i mappens sidhuvud</translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -848,10 +844,6 @@
     <message>
         <source>Welcome to Fileman.</source>
         <translation>Välkommen till Fileman.</translation>
-    </message>
-    <message>
-        <source>If you want to support Fileman and its development please consider donating.</source>
-        <translation>Om du vill stödja Fileman och dess utveckling, kanske du kan överväga att donera.</translation>
     </message>
 </context>
 <context>

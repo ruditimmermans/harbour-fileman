@@ -1,3 +1,4 @@
+
 import QtQuick 2.5
 import Sailfish.Silica 1.0
 
@@ -23,6 +24,7 @@ Page {
                 id: directoryLookHeader
                 text: qsTr("Directory display look")
             }
+
             TextSwitch {
                 text: settings.showHiddenFiles ? qsTr("Show hidden files") : qsTr("Don't show hidden files")
                 description: qsTr("View hidden files and folders")

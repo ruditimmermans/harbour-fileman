@@ -28,7 +28,7 @@ Settings::Settings(QObject *parent) :
     if (settings->contains("showHiddenFiles"))
         m_showHiddenFiles = settings->value("showHiddenFiles").toBool();
     else
-        m_showHiddenFiles = true;
+        m_showHiddenFiles = false;
 
     if (settings->contains("showDirHeader"))
         m_showDirHeader = settings->value("showDirHeader").toBool();
@@ -274,6 +274,7 @@ void Settings::setShowHiddenFiles(const bool &showHiddenFiles)
         settings->setValue("showHiddenFiles", QVariant(showHiddenFiles));
         settings->sync();
         emit showHiddenFilesChanged(showHiddenFiles);
+        emit directoryViewSettingsChanged();
     }
 }
 
@@ -293,6 +294,7 @@ void Settings::setShowDirHeader(const bool &showDirHeader)
         settings->setValue("showDirHeader", QVariant(showDirHeader));
         settings->sync();
         emit showDirHeaderChanged(showDirHeader);
+        emit directoryViewSettingsChanged();
     }
 }
 

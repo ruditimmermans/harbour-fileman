@@ -20,10 +20,6 @@
         <translation>Rudi Timmermans</translation>
     </message>
     <message>
-        <source>Donate with Paypal</source>
-        <translation>Doneer met Paypal</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Versie</translation>
     </message>
@@ -91,18 +87,6 @@
         <translation>Directoryweergave uiterlijk</translation>
     </message>
     <message>
-        <source>Show hidden files</source>
-        <translation>Verborgen bestanden weergeven</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
-        <translation>Verborgen bestanden niet weergeven</translation>
-    </message>
-    <message>
-        <source>View hidden files and folders</source>
-        <translation>Verborgen bestanden en mappen weergeven</translation>
-    </message>
-    <message>
         <source>Show path into the dir header</source>
         <translation>Path in de mapkop weergeven</translation>
     </message>
@@ -113,6 +97,18 @@
     <message>
         <source>Show the path in the dir header</source>
         <translation>Toon het pad in de mapkop</translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation>Verborgen bestanden weergeven</translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation>Verborgen bestanden niet weergeven</translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
+        <translation>Verborgen bestanden en mappen weergeven</translation>
     </message>
 </context>
 <context>
@@ -853,10 +849,6 @@
     <message>
         <source>Welcome to Fileman.</source>
         <translation>Welkom bij Fileman.</translation>
-    </message>
-    <message>
-        <source>If you want to support Fileman and its development please consider donating.</source>
-        <translation>Als je Fileman en zijn ontwikkeling wilt ondersteunen, overweeg dan om te doneren.</translation>
     </message>
 </context>
 <context>

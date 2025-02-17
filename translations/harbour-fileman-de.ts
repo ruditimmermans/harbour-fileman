@@ -20,10 +20,6 @@
         <translation>Rudi Timmermans</translation>
     </message>
     <message>
-        <source>Donate with Paypal</source>
-        <translation>Spenden mit Paypal</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Version</translation>
     </message>
@@ -91,18 +87,6 @@
         <translation>Verzeichniss Ansicht</translation>
     </message>
     <message>
-        <source>Show hidden files</source>
-        <translation>Versteckte Dateien anzeigen</translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
-        <translation>Versteckte Dateien ausblenden</translation>
-    </message>
-    <message>
-        <source>View hidden files and folders</source>
-        <translation>Versteckte Dateien und Verzeichnisse anzeigen</translation>
-    </message>
-    <message>
         <source>Show path into the dir header</source>
         <translation>Verzeichniss-Pfad in Titelleiste anzeigen</translation>
     </message>
@@ -113,6 +97,18 @@
     <message>
         <source>Show the path in the dir header</source>
         <translation>Verzeichniss-Pfad in Titelleiste anzeigen</translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -848,10 +844,6 @@
     <message>
         <source>Welcome to Fileman.</source>
         <translation>Willkommen bei Fileman.</translation>
-    </message>
-    <message>
-        <source>If you want to support Fileman and its development please consider donating.</source>
-        <translation>Wenn Du die Fileman-Entwicklung unterstützen möchtest, sind Spenden sehr willkommen.</translation>
     </message>
 </context>
 <context>

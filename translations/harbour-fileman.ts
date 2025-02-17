@@ -20,10 +20,6 @@
         <translation>Rudi Timmermans</translation>
     </message>
     <message>
-        <source>Donate with Paypal</source>
-        <translation>Donate with Paypal</translation>
-    </message>
-    <message>
         <source>Version</source>
         <translation>Version</translation>
     </message>
@@ -91,18 +87,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Show hidden files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Don&apos;t show hidden files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>View hidden files and folders</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Show path into the dir header</source>
         <translation type="unfinished"></translation>
     </message>
@@ -112,6 +96,18 @@
     </message>
     <message>
         <source>Show the path in the dir header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Don&apos;t show hidden files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View hidden files and folders</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -852,10 +848,6 @@
     </message>
     <message>
         <source>Welcome to Fileman.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>If you want to support Fileman and its development please consider donating.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

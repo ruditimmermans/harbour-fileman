@@ -52,25 +52,6 @@ Dialog {
                 text: qsTr("Fileman is free software released under the GNU General Public License (GPL), version 3 or later.")
                 wrapMode: Text.WordWrap
             }
-
-            Item {
-                width: parent.width
-                height: Theme.paddingLarge
-            }
-
-            IconTextButton {
-                anchors.horizontalCenter: parent.horizontalCenter
-                font.pixelSize: Theme.fontSizeMedium
-                text: qsTr("If you want to support Fileman and its development please consider donating.")
-                iconSource: "qrc:/images/paypal"
-                onClicked: { Qt.openUrlExternally("https://www.paypal.com/donate?hosted_button_id=K85Y233EKB5N4");
-                }
-            }
-
-            Item {
-                width: parent.width
-                height: Theme.paddingLarge
-            }
         }
     }
 
