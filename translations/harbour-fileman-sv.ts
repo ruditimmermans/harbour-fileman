@@ -100,15 +100,15 @@
     </message>
     <message>
         <source>Show hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa dolda filer</translation>
     </message>
     <message>
         <source>Don&apos;t show hidden files</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa inte dolda filer</translation>
     </message>
     <message>
         <source>View hidden files and folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa dolda filer och mappar</translation>
     </message>
 </context>
 <context>
