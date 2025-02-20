@@ -11,15 +11,6 @@ ApplicationWindow
         return pageStack.find(function(page) { if ('isDirectoryPage' in page) { return true; } else return false; })
     }
 
-    property var getDirectoryView: function() {
-        var page = getDirectoryPage()
-
-        if (page.currentView)
-            return page.currentView
-        else
-            return false
-    }
-
     // Get the current file page
     property var getFilePage: function() {
         return pageStack.find(function(page) { if ('isFilePage' in page) { return true; } else return false; })
@@ -43,7 +34,7 @@ ApplicationWindow
     allowedOrientations: Orientation.All
 
     property string appName: "Fileman"
-    property string version: "1.7-0"
+    property string version: "1.8-0"
 
     initialPage: Qt.resolvedUrl("pages/BackPage.qml")
     cover: undefined
