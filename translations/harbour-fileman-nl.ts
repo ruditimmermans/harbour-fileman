@@ -413,7 +413,7 @@
     </message>
     <message>
         <source>PDF document</source>
-        <translation>PDF document</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
