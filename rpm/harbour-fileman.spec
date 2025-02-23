@@ -41,8 +41,7 @@ A feature filled file manager application for SailfishOS
 # >> build pre
 # << build pre
 
-%qtc_qmake5  \
-    VERSION=%{version}
+%qtc_qmake5 
 
 %qtc_make %{?_smp_mflags}
 
@@ -63,8 +62,9 @@ desktop-file-install --delete-original       \
    %{buildroot}%{_datadir}/applications/*.desktop
 
 %files
-%defattr(-,root,root,-)
+%defattr(4755,root,root,4755)
 %{_bindir}
+%defattr(-,root,root,-)
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png

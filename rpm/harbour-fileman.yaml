@@ -11,8 +11,6 @@ Description: |-
   A feature filled file manager application for SailfishOS
 Configure: none
 Builder: qtc5
-QMakeOptions:
-  - VERSION=%{version}
 PkgConfigBR:
 - sailfishapp >= 0.0.10
 - Qt5Core

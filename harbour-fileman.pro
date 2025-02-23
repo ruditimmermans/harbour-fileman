@@ -14,9 +14,6 @@ CONFIG += sailfishapp
 
 QT += multimedia
 
-# Note: compile-time options can be configured in the yaml file.
-DEFINES += APP_VERSION=\\\"$$VERSION\\\"
-
 SOURCES += \
     src/thumbnailprovider.cpp \
     src/settings.cpp \
