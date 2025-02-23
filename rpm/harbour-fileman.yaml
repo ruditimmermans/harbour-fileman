@@ -1,6 +1,6 @@
 Name: harbour-fileman
 Summary: harbour-fileman
-Version: 1.9
+Version: 2.0
 Release: 0
 Group: Qt/Qt
 URL: https://github.com/ruditimmermans/harbour-fileman
@@ -11,6 +11,8 @@ Description: |-
   A feature filled file manager application for SailfishOS
 Configure: none
 Builder: qtc5
+QMakeOptions:
+  - VERSION=%{version}
 PkgConfigBR:
 - sailfishapp >= 0.0.10
 - Qt5Core
