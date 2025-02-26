@@ -1,15 +1,13 @@
 name: CI on tags (aarch64,armv7hl,i486)
 
 on:
-  push:
-    tags:
-      # '**' also matches the slash ('/'), in contrast to '*',
-      # see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
-      - '**'
+  pull_request:
+    branches:
+      - devel
+      - master
   # Allows to run this workflow manually from the Actions tab.
-  #workflow_dispatch:
-  # Rather set a new tag in the format N/X.Y.Z (e.g., 1/0.6.3) to build a release originally tagged with 0.6.3 again.
-
+  workflow_dispatch:
+  
 defaults:
   run:
     # Note that 'bash' provides -o pipefail, in contrast to the default (i.e., unspecified, which also uses bash) or 'sh',
