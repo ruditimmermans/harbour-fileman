@@ -34,7 +34,7 @@ ApplicationWindow
     allowedOrientations: Orientation.All
 
     property string appName: "Fileman"
-    property string version: "2.0-0"
+    property string version: "2.1-0"
 
     initialPage: Qt.resolvedUrl("pages/BackPage.qml")
     cover: undefined
