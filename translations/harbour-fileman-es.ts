@@ -832,7 +832,7 @@
         <translation>Traductores de Fileman</translation>
     </message>
     <message>
-        <source>POEditor translations</source>
+        <source>GitHub repository translations</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

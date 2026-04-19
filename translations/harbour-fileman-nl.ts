@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>GitHub Repository</source>
-        <translation>GitHub Repository</translation>
+        <translation>GitHub Repositories</translation>
     </message>
     <message>
         <source>Report an Issue</source>
@@ -162,19 +162,19 @@
     <name>DirectoryPage</name>
     <message>
         <source>Deleting </source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijderen </translation>
     </message>
     <message>
         <source>Copying </source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiëren </translation>
     </message>
     <message>
         <source> entry</source>
-        <translation type="unfinished"></translation>
+        <translation> vermelding</translation>
     </message>
     <message>
         <source> entries</source>
-        <translation type="unfinished"></translation>
+        <translation> vermeldingen</translation>
     </message>
 </context>
 <context>
@@ -832,8 +832,8 @@
         <translation>Fileman vertalers</translation>
     </message>
     <message>
-        <source>POEditor translations</source>
-        <translation>POEditor vertalingen</translation>
+        <source>GitHub repository translations</source>
+        <translation>GitHub repositorie vertalingen</translation>
     </message>
 </context>
 <context>

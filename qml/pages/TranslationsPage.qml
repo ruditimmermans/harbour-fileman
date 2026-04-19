@@ -18,8 +18,8 @@ Page
         {
             MenuItem
             {
-                text: qsTr("POEditor translations")
-                onClicked: Qt.openUrlExternally("https://poeditor.com/join/project/NkPuDWFCn1")
+                text: qsTr("GitHub repository translations")
+                onClicked: Qt.openUrlExternally("https://github.com/ruditimmermans/harbour-fileman/tree/main/translations")
             }
         }
 
